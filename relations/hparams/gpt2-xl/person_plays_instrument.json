@@ -1,0 +1,9 @@
+{
+    "model_name": "gpt2-xl",
+    "relation_name": "person plays instrument",
+    "h_layer": 24,
+    "beta": 2.25,
+    "rank": 178,
+    "z_layer": -1,
+    "h_layer_edit": 21
+}

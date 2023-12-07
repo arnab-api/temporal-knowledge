@@ -1,0 +1,9 @@
+{
+    "model_name": "gptj",
+    "relation_name": "person lead singer of band",
+    "h_layer": 10,
+    "beta": 2.25,
+    "rank": 163,
+    "z_layer": -1,
+    "h_layer_edit": 8
+}

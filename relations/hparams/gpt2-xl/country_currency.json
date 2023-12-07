@@ -1,0 +1,9 @@
+{
+    "model_name": "gpt2-xl",
+    "relation_name": "country currency",
+    "h_layer": 14,
+    "beta": 2.25,
+    "rank": 40,
+    "z_layer": -1,
+    "h_layer_edit": 9
+}

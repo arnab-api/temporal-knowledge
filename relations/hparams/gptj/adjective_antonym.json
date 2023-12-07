@@ -1,0 +1,9 @@
+{
+    "model_name": "gptj",
+    "relation_name": "adjective antonym",
+    "h_layer": 11,
+    "beta": 2.25,
+    "rank": 243,
+    "z_layer": -1,
+    "h_layer_edit": 8
+}

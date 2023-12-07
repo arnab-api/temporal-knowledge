@@ -1,0 +1,9 @@
+{
+    "model_name": "llama",
+    "relation_name": "adjective antonym",
+    "h_layer": 23,
+    "beta": 8.0,
+    "rank": 286,
+    "z_layer": -1,
+    "h_layer_edit": 7
+}

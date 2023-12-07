@@ -1,0 +1,9 @@
+{
+    "model_name": "llama",
+    "relation_name": "superhero person",
+    "h_layer": 14,
+    "beta": 8.0,
+    "rank": 185,
+    "z_layer": -1,
+    "h_layer_edit": 11
+}

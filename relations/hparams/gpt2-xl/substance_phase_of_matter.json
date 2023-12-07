@@ -1,0 +1,9 @@
+{
+    "model_name": "gpt2-xl",
+    "relation_name": "substance phase of matter",
+    "h_layer": 21,
+    "beta": 2.25,
+    "rank": 45,
+    "z_layer": -1,
+    "h_layer_edit": 12
+}
