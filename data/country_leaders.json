@@ -1,0 +1,24 @@
+{
+    "name": "leader of country",
+    "prompt_templates": [
+        "{}, ({}), the leader of government was named",
+        "In the year {}, {}'s leader of government was named"
+    ],
+    "prompt_templates_zs": [
+        "In the year {}, who was the leader of government in {}? Their name is",
+        "Who was the leader of government in {} in the year {}? Their name is"
+    ],
+    "properties": {
+        "relation_type": "factual",
+        "domain_name": "country",
+        "range_name": "person",
+        "variable_dim": "year"
+    },
+    "samples": [
+        {
+            "subject": "bananas",
+            "object": "white",
+            "variable": []
+        }
+    ]
+}
