@@ -1,9 +1,12 @@
+import logging
 import re
 from typing import Literal, Optional
 
 import torch
 import transformers
 from transformers import AutoModelForCausalLM, AutoTokenizer
+
+logger = logging.getLogger(__name__)
 
 
 class ModelandTokenizer:
@@ -34,7 +37,7 @@ class ModelandTokenizer:
             )
             tokenizer.pad_token = tokenizer.eos_token
             model.eval()
-            print(
+            logger.info(
                 f"loaded model <{model_path}> | size: {get_model_size(model) :.3f} MB"
             )
             self.model_name = model_path

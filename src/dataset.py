@@ -34,7 +34,7 @@ def fill_template(template: str, sample: Sample, placeholders: list[str]) -> str
     )
 
 
-@dataclass()
+# @dataclass()
 class TemporalRelation(DataClassJsonMixin, Dataset):
     relation_name: str
     prompt_template: str
@@ -60,18 +60,18 @@ class TemporalRelation(DataClassJsonMixin, Dataset):
         self.few_shot_demonstrations = []
         self.few_shot_samples = []
 
-        self.__select_icl_examples(properties["num_icl"])
+        self.select_icl_examples(properties["num_icl"])
 
-        logger.info(f"initialized relation -> {relation_name} with {len(self)} samples")
+        logger.info(
+            f'initialized relation -> "{relation_name}" with {len(self)} samples'
+        )
 
-    def __select_icl_examples(self, num_icl: int) -> list[Sample]:
+    def select_icl_examples(self, num_icl: int) -> list[Sample]:
         if num_icl == 0:
             return
 
         self.few_shot_demonstrations = []
         self.few_shot_samples = []
-
-        print(f" >>> {len(self.samples)=}")
 
         icl_indices = np.random.choice(len(self.samples), size=num_icl, replace=False)
         for idx in icl_indices:
@@ -99,22 +99,6 @@ class TemporalRelation(DataClassJsonMixin, Dataset):
         full_query = "\n".join(self.few_shot_demonstrations + [query])
         return (full_query, object)
 
-    def filter_by_var(self, var: str):
-        filtered_samples = [
-            sample
-            for sample in self.samples + self.few_shot_samples
-            if sample.placeholders["<var>"] == var
-        ]
-
-        logger.info(
-            f"filtered {len(filtered_samples)} with var={var}, from {self.relation_name}"
-        )
-
-        filtered_relation = copy.deepcopy(self)
-        filtered_relation.samples = filtered_samples
-        filtered_relation.__select_icl_examples(self.properties["num_icl"])
-        return filtered_relation
-
 
 def load_relation(
     relation_file: str,
@@ -134,8 +118,11 @@ def load_relation(
     properties["num_icl"] = num_icl
     prompt_template = relation_data["prompt_templates"][prompt_idx]
 
+    raw_samples = relation_data["samples"]
+    np.random.shuffle(raw_samples)
+
     samples: list[Sample] = []
-    for sample in relation_data["samples"]:
+    for sample in raw_samples:
         placeholders = {
             placeholder: sample[placeholder]
             for placeholder in properties["placeholders"].keys()

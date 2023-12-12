@@ -1,15 +1,13 @@
+import copy
 import logging
-from dataclasses import dataclass
 from typing import Any, Callable, Literal, Optional, Union
 
 import src.utils.tokenizer_utils as tokenizer_utils
+from src.dataset import TemporalRelation
 from src.models import ModelandTokenizer
 
 import baukit
-import names
-import numpy as np
 import torch
-from dataclasses_json import DataClassJsonMixin
 
 logger = logging.getLogger(__name__)
 
@@ -220,38 +218,49 @@ def make_icl_prompt(
     return prompt
 
 
+def filter_samples_by_var(relation: TemporalRelation, var: str) -> TemporalRelation:
+    filtered_samples = [
+        sample
+        for sample in relation.samples + relation.few_shot_samples
+        if sample.placeholders["<var>"] == var
+    ]
+
+    logger.info(
+        f"filtered {len(filtered_samples)} with var={var}, from {relation.relation_name}"
+    )
+
+    filtered_relation = copy.deepcopy(relation)
+    filtered_relation.samples = filtered_samples
+    filtered_relation.select_icl_examples(relation.properties["num_icl"])
+    return filtered_relation
+
+
 def filter_samples_by_model_knowledge(
-    mt: ModelandTokenizer,
-    subj_obj_mapping: list[tuple[str, str]],
-    prompt_template=" {} is located in the country of",
-    icl_examples: Optional[list[tuple[str, str]]] = None,
-) -> list[tuple[str, str]]:
-    if icl_examples is not None:
-        prompt_template = make_icl_prompt(
-            icl_examples,
-            prompt_template,
-            bos_token=mt.tokenizer.bos_token,
-            subject="{}",
-        )
-        subj_obj_mapping = list(set(subj_obj_mapping) - set(icl_examples))
-    logger.debug(f"filtering with prompt `{prompt_template}`")
-    prompts = [prompt_template.format(subj) for subj, _ in subj_obj_mapping]
+    mt: ModelandTokenizer, relation: TemporalRelation
+) -> TemporalRelation:
+    """Filter samples by model knowledge."""
+    logger.debug(f'"{relation.relation_name}" | filtering with {mt.model_name}')
 
     filtered_samples = []
-    for i in range(len(prompts)):
-        predictions = predict_next_token(mt, prompts[i], k=5)[0]
-        subj = subj_obj_mapping[i][0]
-        answer = subj_obj_mapping[i][1]
+    for i in range(len(relation.samples)):
+        question, answer = relation[i]
+        predictions = predict_next_token(mt, question, k=5)[0]
         top_pred = predictions[0]
         is_known = is_nontrivial_prefix(prediction=top_pred.token, target=answer)
+        sample = relation.samples[i]
         if is_known:
-            filtered_samples.append(subj_obj_mapping[i])
+            filtered_samples.append(sample)
 
         logger.debug(
-            f"{subj=} -> {answer=} | predicted = '{top_pred.token}'({top_pred.prob}) ==> ({get_tick_marker(is_known)})"
+            f"{sample.subject=}[{sample.placeholders['<var>']}] -> {answer=} | predicted = '{top_pred.token}'({top_pred.prob}) ==> ({get_tick_marker(is_known)})"
         )
 
-    return filtered_samples
+    logger.info(
+        f'filtered relation "{relation.relation_name}" to {len(filtered_samples)} samples'
+    )
+
+    relation.samples = filtered_samples
+    return relation
 
 
 def untuple(x):
