@@ -1,127 +1,195 @@
 import copy
+import json
+import logging
 import os
 from dataclasses import dataclass, replace
-from typing import Optional
+from typing import Literal, Optional
 
 import src.utils.dataset_utils as dset_utils
 
-import names
 import numpy as np
 from dataclasses_json import DataClassJsonMixin
 from torch.utils.data import Dataset
 
-DEFAULT_PATH = "data/counterfact"
+logger = logging.getLogger(__name__)
+
+
+DEFAULT_PATH = "data"
 
 
 @dataclass(frozen=False)
-class QA_Sample(DataClassJsonMixin):
+class Sample(DataClassJsonMixin):
     query: str
     subject: str
-    variable: str
-    answer: str
+    object: str
+    placeholders: dict[str, str] = None
+
+
+def fill_template(template: str, sample: Sample, placeholders: list[str]) -> str:
+    placeholder_values = sample.placeholders if isinstance(sample, Sample) else sample
+    for placeholder in placeholders:
+        template = template.replace(placeholder, placeholder_values[placeholder])
+    return template.format(
+        sample.subject if isinstance(sample, Sample) else sample["subject"]
+    )
 
 
 @dataclass()
-class VariableBindingFactRecallDataset(DataClassJsonMixin, Dataset):
-    few_shot_examples: str
-    qa_samples: list[QA_Sample]
+class TemporalRelation(DataClassJsonMixin, Dataset):
+    relation_name: str
+    prompt_template: str
+    samples: list[Sample]
+    properties: Optional[dict]
+
+    few_shot_demonstrations: list[str]
+    few_shot_samples: list[Sample]
 
     def __init__(
         self,
-        few_shot_examples: str,
-        qa_samples: list[QA_Sample],
+        relation_name: str,
+        prompt_template: str,
+        samples: list[Sample],
+        properties: dict,
     ) -> None:
         super().__init__()
-        self.few_shot_examples = few_shot_examples
-        self.qa_samples = qa_samples
+        self.relation_name = relation_name
+        self.prompt_template = prompt_template
+        self.samples = samples
+        self.properties = properties
 
-    # @property
+        self.few_shot_demonstrations = []
+        self.few_shot_samples = []
+
+        self.__select_icl_examples(properties["num_icl"])
+
+        logger.info(f"initialized relation -> {relation_name} with {len(self)} samples")
+
+    def __select_icl_examples(self, num_icl: int) -> list[Sample]:
+        if num_icl == 0:
+            return
+
+        self.few_shot_demonstrations = []
+        self.few_shot_samples = []
+
+        print(f" >>> {len(self.samples)=}")
+
+        icl_indices = np.random.choice(len(self.samples), size=num_icl, replace=False)
+        for idx in icl_indices:
+            self.few_shot_samples.append(self.samples[idx])
+
+        for sample in self.few_shot_samples:
+            cur_fact = fill_template(
+                self.prompt_template,
+                sample,
+                list(self.properties["placeholders"].keys()),
+            )
+            cur_fact += f" {sample.object}"
+            self.few_shot_demonstrations.append(cur_fact)
+
+        # remove icl samples from the dataset
+        for idx in icl_indices:
+            self.samples.pop(idx)
+
     def __len__(self) -> int:
-        return len(self.qa_samples)
+        return len(self.samples)
 
-    # @property
     def __getitem__(self, idx):
-        query = self.qa_samples[idx].query
-        answer = self.qa_samples[idx].answer
-        full_query = "\n".join(self.few_shot_examples + [query])
-        return (full_query, answer)
+        query = self.samples[idx].query
+        object = self.samples[idx].object
+        full_query = "\n".join(self.few_shot_demonstrations + [query])
+        return (full_query, object)
 
+    def filter_by_var(self, var: str):
+        filtered_samples = [
+            sample
+            for sample in self.samples + self.few_shot_samples
+            if sample.placeholders["<var>"] == var
+        ]
 
-def generate_synthetic_dataset(
-    relation_subj_obj_mapping: list[tuple[str, str]],
-    variable_binding_template=" {} is visiting {}",
-    query_template=" {} is in {}.",
-    num_options: int = 3,  # number of options to choose from in the query
-    num_icl: int = 5,  # number of few-shot examples to contextualize
-    batch_size: int = 100,
-) -> VariableBindingFactRecallDataset:
-    (
-        icl_examples,
-        _,
-        _,
-        _,
-        used_subjects,
-        used_variables,
-    ) = dset_utils.get_demonstrations(
-        relation_subj_obj_mapping,
-        num_options,
-        num_icl,
-        variable_binding_template=variable_binding_template,
-        query_template=query_template,
-    )
-
-    subj_placeholder_idx = query_template.index("{}")
-    obj_placeholder_idx = (
-        subj_placeholder_idx
-        + 1
-        + query_template[query_template.index("{}") + 1 :].index("{}")
-    )
-    last_query = query_template[:obj_placeholder_idx].rstrip()
-
-    qa_pairs: list[QA_Sample] = []
-
-    # print(used_variables)
-    # print(used_subjects)
-
-    indices = list(range(len(relation_subj_obj_mapping)))
-    np.random.shuffle(indices)
-
-    # while len(qa_pairs) < batch_size:
-    for idx in indices:
-        subj, ans = relation_subj_obj_mapping[idx]
-        if subj in used_subjects:
-            continue
-        # print(
-        #     f"{len(qa_pairs)}/{batch_size} ==> {len(used_subjects)} | {len(used_variables)}"
-        # )
-        (
-            cur_query,
-            cur_answer,
-            cur_subject,
-            cur_variable,
-            _,
-            _,
-        ) = dset_utils.get_demonstrations(
-            subj_obj_mapping=relation_subj_obj_mapping,
-            num_options=num_options,
-            num_icl=1,
-            variable_binding_template=variable_binding_template,
-            query_template=last_query,
-            used_variables=copy.copy(used_variables),
-            used_subjects=copy.copy(used_subjects),
+        logger.info(
+            f"filtered {len(filtered_samples)} with var={var}, from {self.relation_name}"
         )
-        qa_pairs.append(
-            QA_Sample(
-                query=cur_query[0],
-                subject=cur_subject[0],
-                variable=cur_variable[0],
-                answer=cur_answer[0],
+
+        filtered_relation = copy.deepcopy(self)
+        filtered_relation.samples = filtered_samples
+        filtered_relation.__select_icl_examples(self.properties["num_icl"])
+        return filtered_relation
+
+
+def load_relation(
+    relation_file: str,
+    num_icl: int = 5,  # number of few-shot examples to contextualize
+    batch_size: int = -1,  # number of samples to load. -1 => load all samples
+    prompt_idx: Literal[
+        # -1,  # use the zero-shot prompt
+        0,  # 0 => ... <var> ... <subj> ...
+        1,  # 1 => ... <subj> ... <var> ...
+    ] = 0,
+    default_path: str = DEFAULT_PATH,
+) -> TemporalRelation:
+    with open(os.path.join(default_path, relation_file)) as f:
+        relation_data = json.load(f)
+
+    properties = relation_data["properties"]
+    properties["num_icl"] = num_icl
+    prompt_template = relation_data["prompt_templates"][prompt_idx]
+
+    samples: list[Sample] = []
+    for sample in relation_data["samples"]:
+        placeholders = {
+            placeholder: sample[placeholder]
+            for placeholder in properties["placeholders"].keys()
+        }
+        samples.append(
+            Sample(
+                query=fill_template(
+                    prompt_template, sample, list(properties["placeholders"].keys())
+                ),
+                subject=sample["subject"],
+                object=sample["object"],
+                placeholders=placeholders,
+            )
+        )
+        batch_size -= 1
+        if batch_size == 0:
+            break
+
+    return TemporalRelation(
+        relation_name=relation_data["name"],
+        prompt_template=prompt_template,
+        samples=samples,
+        properties=properties,
+    )
+
+
+def load_dataset(
+    relations: list[str] = [],  # load all relations by default
+    num_icl: int = 5,  # number of few-shot examples to contextualize
+    batch_size: int = -1,  # number of samples to load per relation. -1 => load all samples
+    prompt_idx: Literal[
+        # -1,  # use the zero-shot prompt
+        0,  # 0 => ... <var> ... <subj> ...
+        1,  # 1 => ... <subj> ... <var> ...
+    ] = 0,
+    default_path: str = DEFAULT_PATH,
+) -> list[TemporalRelation]:
+    if len(relations) == 0:
+        relations = list(os.listdir(default_path))
+        relations.remove("raw")
+    else:
+        relations = [f'{r.lower().replace(" ", "_")}.json' for r in relations]
+
+    dataset: list[TemporalRelation] = []
+
+    for relation in relations:
+        dataset.append(
+            load_relation(
+                relation_file=relation,
+                num_icl=num_icl,
+                batch_size=batch_size,
+                prompt_idx=prompt_idx,
+                default_path=default_path,
             )
         )
 
-        if len(qa_pairs) == batch_size:
-            break
-
-    return VariableBindingFactRecallDataset(
-        few_shot_examples=icl_examples, qa_samples=qa_pairs
-    )
+    return dataset

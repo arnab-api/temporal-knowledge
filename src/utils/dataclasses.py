@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 from typing import Any, Optional, Union
 
-from src.dataset import QA_Sample, VariableBindingFactRecallDataset
+from src.dataset import Sample, TemporalRelation
 
 from dataclasses_json import DataClassJsonMixin
 
@@ -34,8 +34,8 @@ class TrialResult(DataClassJsonMixin):
 
 @dataclass(frozen=True)
 class PatchingResults_for_one_pair(DataClassJsonMixin):
-    source_QA: QA_Sample
-    edit_QA: QA_Sample
+    source_QA: Sample
+    edit_QA: Sample
     edit_index: int
     edit_token: str
     predictions_after_patching: dict[int, list[PredictedToken]]
@@ -51,7 +51,7 @@ class LayerPatchingEfficacy(DataClassJsonMixin):
 
 @dataclass(frozen=True)
 class PatchingTrialResult(DataClassJsonMixin):
-    few_shot_demonstration: list[QA_Sample]
+    few_shot_demonstration: list[Sample]
     layer_patching_effecacy: list[LayerPatchingEfficacy]
     patching_results: list[PatchingResults_for_one_pair]
 
