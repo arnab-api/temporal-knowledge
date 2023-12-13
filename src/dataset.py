@@ -2,6 +2,7 @@ import copy
 import json
 import logging
 import os
+import re
 from dataclasses import dataclass, replace
 from typing import Literal, Optional
 
@@ -25,8 +26,19 @@ class Sample(DataClassJsonMixin):
     placeholders: dict[str, str] = None
 
 
-def fill_template(template: str, sample: Sample, placeholders: list[str]) -> str:
+def get_placeholder_keys(template: str) -> list[str]:
+    ph_start = [ph.start() for ph in re.finditer(r"<", template)]
+    ph_end = [ph.end() for ph in re.finditer(r">", template)]
+
+    placeholders = [template[st:nd] for st, nd in zip(ph_start, ph_end)]
+    return placeholders
+
+
+def fill_template(template: str, sample: str | Sample) -> str:
+    if isinstance(sample, str):
+        return template.format(sample)
     placeholder_values = sample.placeholders if isinstance(sample, Sample) else sample
+    placeholders = get_placeholder_keys(template)
     for placeholder in placeholders:
         template = template.replace(placeholder, placeholder_values[placeholder])
     return template.format(
@@ -34,11 +46,7 @@ def fill_template(template: str, sample: Sample, placeholders: list[str]) -> str
     )
 
 
-def make_prompt() -> str:
-    return "What is the {} of the {}?"
-
-
-# @dataclass()
+@dataclass()
 class TemporalRelation(DataClassJsonMixin, Dataset):
     relation_name: str
     prompt_template: str
@@ -85,7 +93,6 @@ class TemporalRelation(DataClassJsonMixin, Dataset):
             cur_fact = fill_template(
                 self.prompt_template,
                 sample,
-                list(self.properties["placeholders"].keys()),
             )
             cur_fact += f" {sample.object}"
             self.few_shot_demonstrations.append(cur_fact)
@@ -134,9 +141,7 @@ def load_relation(
         }
         samples.append(
             Sample(
-                query=fill_template(
-                    prompt_template, sample, list(properties["placeholders"].keys())
-                ),
+                query=fill_template(prompt_template, sample),
                 subject=sample["subject"],
                 object=sample["object"],
                 placeholders=placeholders,

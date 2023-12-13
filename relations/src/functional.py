@@ -10,6 +10,7 @@ from relations.src.utils import tokenizer_utils
 from relations.src.utils.typing import Layer, ModelInput, ModelOutput, StrSequence
 
 import baukit
+import numpy as np
 import torch
 from dataclasses_json import DataClassJsonMixin
 from tqdm.auto import tqdm
@@ -88,7 +89,10 @@ def order_1_approx(
 
     """
     if z_layer is None:
-        z_layer = models.determine_layers(mt)[-1]
+        try:
+            z_layer = models.determine_layers(mt)[-1]
+        except:
+            z_layer = mt.n_layer - 1
     if z_index is None:
         z_index = -1
     if inputs is None:
@@ -106,7 +110,14 @@ def order_1_approx(
     use_cache = past_key_values is not None
 
     # Precompute initial h and z.
-    [h_layer_name, z_layer_name] = models.determine_layer_paths(mt, [h_layer, z_layer])
+    try:
+        [h_layer_name, z_layer_name] = models.determine_layer_paths(
+            mt, [h_layer, z_layer]
+        )
+    except:
+        [h_layer_name, z_layer_name] = np.array(mt.layer_names)[
+            [h_layer, z_layer]
+        ].tolist()
 
     edit_output: function | None = None
     if h is not None:
@@ -308,8 +319,9 @@ class ComputeHiddenStatesOutput(NamedTuple):
     outputs: ModelOutput
 
 
-# TODO(evan): Syntacic sugar for when you only want one layer,
-# or don't want outputs.
+import src.models as tmp_models
+
+
 @torch.no_grad()
 def compute_hidden_states(
     *,
@@ -339,8 +351,12 @@ def compute_hidden_states(
         inputs = mt.tokenizer(prompt, return_tensors="pt", padding="longest").to(
             mt.model.device
         )
-
-    layer_paths = models.determine_layer_paths(mt, layers=layers, return_dict=True)
+    try:
+        layer_paths = models.determine_layer_paths(mt, layers=layers, return_dict=True)
+    except:
+        layer_paths = tmp_models.determine_layer_paths(
+            mt, layers=layers, return_dict=True
+        )
     with baukit.TraceDict(mt.model, layer_paths.values()) as ret:
         outputs = mt.model(
             input_ids=inputs.input_ids, attention_mask=inputs.attention_mask, **kwargs
@@ -430,16 +446,7 @@ def predict_next_token(
 
 #     return prompt
 
-from src.dataset import Sample
-
-
-def fill_template(template: str, sample: Sample, placeholders: list[str]) -> str:
-    placeholder_values = sample.placeholders if isinstance(sample, Sample) else sample
-    for placeholder in placeholders:
-        template = template.replace(placeholder, placeholder_values[placeholder])
-    return template.format(
-        sample.subject if isinstance(sample, Sample) else sample["subject"]
-    )
+from src.dataset import Sample, fill_template
 
 
 def make_prompt(
@@ -450,7 +457,10 @@ def make_prompt(
     mt: models.ModelAndTokenizer | None = None,
 ) -> str:
     """Build the prompt given the template and (optionally) ICL examples."""
-    prompt = prompt_template.format(subject)
+    prompt = fill_template(
+        prompt_template,
+        subject,
+    )
 
     if examples is not None:
         others = [
@@ -465,10 +475,9 @@ def make_prompt(
                 )
             )
         ]
-        # TODO(evan): Should consider whether prompt wants the space at the end or not.
         prompt = (
             "\n".join(
-                prompt_template.format(x.subject) + f" {x.object}" for x in others
+                fill_template(prompt_template, x) + f" {x.object}" for x in others
             )
             + "\n"
             + prompt

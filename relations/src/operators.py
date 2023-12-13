@@ -39,6 +39,9 @@ class RelationOperator:
         raise NotImplementedError
 
 
+from src.dataset import Sample
+
+
 @dataclass(frozen=True, kw_only=True)
 class LinearRelationOperator(RelationOperator):
     """A linear approximation of a relation inside an LM."""
@@ -54,7 +57,7 @@ class LinearRelationOperator(RelationOperator):
 
     def __call__(
         self,
-        subject: str,
+        sample: str | Sample,
         k: int = 5,
         h: torch.Tensor | None = None,
         **kwargs: Any,
@@ -76,12 +79,14 @@ class LinearRelationOperator(RelationOperator):
 
         if h is None:
             prompt = functional.make_prompt(
-                mt=self.mt, prompt_template=self.prompt_template, subject=subject
+                mt=self.mt, prompt_template=self.prompt_template, subject=sample
             )
             logger.debug(f'computing h from prompt "{prompt}"')
 
             h_index, inputs = functional.find_subject_token_index(
-                mt=self.mt, prompt=prompt, subject=subject
+                mt=self.mt,
+                prompt=prompt,
+                subject=sample.subject if isinstance(sample, Sample) else sample,
             )
 
             [[hs], _] = functional.compute_hidden_states(
@@ -215,20 +220,22 @@ class JacobianIclMeanEstimator(LinearRelationEstimator):
     rank: int | None = None  # If None, don't do low rank approximation.
 
     def __call__(self, relation: data.Relation) -> LinearRelationOperator:
-        _check_nonempty(
-            samples=relation.samples, prompt_templates=relation.prompt_templates
-        )
-        _warn_gt_1(prompt_templates=relation.prompt_templates)
+        # _check_nonempty(
+        #     samples=relation.samples, prompt_templates=relation.prompt_templates
+        # )
+        # _warn_gt_1(prompt_templates=relation.prompt_templates)
+        # samples = relation.samples
+        # prompt_template = relation.prompt_templates[0]
 
-        samples = relation.samples
-        prompt_template = relation.prompt_templates[0]
+        samples = relation.few_shot_samples
+        prompt_template = relation.prompt_template
 
         approxes = []
         for sample in samples:
             prompt = functional.make_prompt(
                 mt=self.mt,
                 prompt_template=prompt_template,
-                subject=sample.subject,
+                subject=sample,
                 examples=samples,
             )
             logger.debug("estimating J for prompt:\n" + prompt)

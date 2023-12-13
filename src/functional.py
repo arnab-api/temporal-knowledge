@@ -200,6 +200,11 @@ def get_tick_marker(value: bool) -> str:
     return "✓" if value else "✗"
 
 
+def format_whitespace(s: str) -> str:
+    """Format whitespace in a string for printing."""
+    return s.replace("\n", "\\n").replace("\t", "\\t")
+
+
 def make_icl_prompt(
     icl_examples: list, prompt_template: str, bos_token: str = "", subject: str = {}
 ):
@@ -253,7 +258,7 @@ def filter_samples_by_model_knowledge(
             filtered_samples.append(sample)
 
         logger.debug(
-            f"{sample.subject=}[{sample.placeholders['<var>']}] -> {answer=} | predicted = '{top_pred.token}'({top_pred.prob}) ==> ({get_tick_marker(is_known)})"
+            f"{sample.subject=}[{sample.placeholders['<var>']}] -> {answer=} | predicted = '{top_pred.token}'({top_pred.prob:.3f}) ==> ({get_tick_marker(is_known)})"
         )
 
     logger.info(

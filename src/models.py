@@ -2,6 +2,9 @@ import logging
 import re
 from typing import Literal, Optional
 
+from src.utils.typing import Layer, Sequence
+
+import baukit
 import torch
 import transformers
 from transformers import AutoModelForCausalLM, AutoTokenizer
@@ -68,7 +71,7 @@ class ModelandTokenizer:
             fields["attn_module_name_format"] = "model.layers.{}.self_attn"
             fields["embedder_name"] = "model.embed_tokens"
             fields["final_layer_norm_name"] = "model.norm"
-            fields["lm_head_name"] = "model.lm_head"
+            fields["lm_head_name"] = "lm_head"
 
         elif "gpt-j" in model_config._name_or_path.lower():
             fields["n_layer"] = model_config.n_layer
@@ -88,6 +91,37 @@ class ModelandTokenizer:
             if value is None:
                 print(f"! Warning: {key} could not be set!")
             setattr(self, key, value)
+
+    @property
+    def lm_head(self) -> torch.nn.Sequential:
+        lm_head = baukit.get_module(self.model, self.lm_head_name)
+        ln_f = baukit.get_module(self.model, self.final_layer_norm_name)
+        return torch.nn.Sequential(ln_f, lm_head)
+
+
+def determine_layer_paths(
+    mt: ModelandTokenizer, layers: Layer | Sequence[Layer], return_dict: bool = False
+):
+    if isinstance(layers, int):
+        layers = [layers]
+
+    layer_paths = []
+    for layer in layers:
+        if isinstance(layer, int):
+            layer_paths.append(mt.layer_names[layer])
+        elif isinstance(layer, str):
+            if layer == "emb":
+                layer_paths.append(mt.embedder_name)
+            elif layer == "ln_f":
+                layer_paths.append(mt.final_layer_norm_name)
+            else:
+                raise ValueError(f"Unknown layer name: {layer}")
+        else:
+            raise ValueError(f"Unknown layer type: {type(layer)}")
+
+    if return_dict:
+        return {layer: path for layer, path in zip(layers, layer_paths)}
+    return layer_paths
 
 
 def get_model_size(
