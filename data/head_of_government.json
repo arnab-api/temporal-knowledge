@@ -2,7 +2,7 @@
     "name": "head of government",
     "prompt_templates": [
         "In <var>, {}'s <role> was named",
-        "{}, (<var>), the <role> was named"
+        "{}, in <var>, had a <role> named"
     ],
     "prompt_templates_zs": [
         "In the year <var>, who was the <role> in {}? Their name is",
