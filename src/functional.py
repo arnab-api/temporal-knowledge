@@ -235,6 +235,7 @@ def filter_samples_by_var(relation: TemporalRelation, var: str) -> TemporalRelat
     return filtered_relation
 
 
+@torch.inference_mode()
 def filter_samples_by_model_knowledge(
     mt: ModelandTokenizer, relation: TemporalRelation
 ) -> TemporalRelation:

@@ -405,18 +405,66 @@ def predict_next_token(
     return predictions
 
 
+# def make_prompt(
+#     *,
+#     prompt_template: str,
+#     subject: str,
+#     examples: Sequence[data.RelationSample] | None = None,
+#     mt: models.ModelAndTokenizer | None = None,
+# ) -> str:
+#     """Build the prompt given the template and (optionally) ICL examples."""
+#     prompt = prompt_template.format(subject)
+
+#     if examples is not None:
+#         others = [x for x in examples if x.subject != subject]
+#         # TODO(evan): Should consider whether prompt wants the space at the end or not.
+#         prompt = (
+#             "\n".join(
+#                 prompt_template.format(x.subject) + f" {x.object}" for x in others
+#             )
+#             + "\n"
+#             + prompt
+#         )
+
+#     prompt = models.maybe_prefix_eos(mt, prompt)
+
+#     return prompt
+
+from src.dataset import Sample
+
+
+def fill_template(template: str, sample: Sample, placeholders: list[str]) -> str:
+    placeholder_values = sample.placeholders if isinstance(sample, Sample) else sample
+    for placeholder in placeholders:
+        template = template.replace(placeholder, placeholder_values[placeholder])
+    return template.format(
+        sample.subject if isinstance(sample, Sample) else sample["subject"]
+    )
+
+
 def make_prompt(
     *,
     prompt_template: str,
-    subject: str,
-    examples: Sequence[data.RelationSample] | None = None,
+    subject: str | Sample,
+    examples: Sequence[Sample] | None = None,
     mt: models.ModelAndTokenizer | None = None,
 ) -> str:
     """Build the prompt given the template and (optionally) ICL examples."""
     prompt = prompt_template.format(subject)
 
     if examples is not None:
-        others = [x for x in examples if x.subject != subject]
+        others = [
+            x
+            for x in examples
+            if (
+                x.subject != subject
+                if isinstance(subject, str)
+                else (
+                    x.subject != subject.subject
+                    and x.placeholders["<var>"] != subject.placeholders["<var>"]
+                )
+            )
+        ]
         # TODO(evan): Should consider whether prompt wants the space at the end or not.
         prompt = (
             "\n".join(

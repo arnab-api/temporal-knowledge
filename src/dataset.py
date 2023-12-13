@@ -34,6 +34,10 @@ def fill_template(template: str, sample: Sample, placeholders: list[str]) -> str
     )
 
 
+def make_prompt() -> str:
+    return "What is the {} of the {}?"
+
+
 # @dataclass()
 class TemporalRelation(DataClassJsonMixin, Dataset):
     relation_name: str
