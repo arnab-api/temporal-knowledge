@@ -1,9 +1,9 @@
 import logging
 from typing import Callable, Literal
 
-import src.functional as F
-from src import models
-from src.models import ModelAndTokenizer
+import relations.src.functional as F
+from relations.src import models
+from relations.src.models import ModelAndTokenizer
 
 import baukit
 import torch

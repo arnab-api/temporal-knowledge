@@ -2,10 +2,10 @@
 import logging
 from typing import Any, Literal, Sequence
 
-from src import data, editors, functional, metrics, models, operators
-from src.functional import low_rank_approx
-from src.utils import experiment_utils
-from src.utils.typing import Layer, PathLike
+from relations.src import data, editors, functional, metrics, models, operators
+from relations.src.functional import low_rank_approx
+from relations.src.utils import experiment_utils
+from relations.src.utils.typing import Layer, PathLike
 
 import torch
 

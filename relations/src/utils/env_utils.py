@@ -2,7 +2,7 @@
 import os
 import pathlib
 
-from src.utils.typing import PathLike
+from relations.src.utils.typing import PathLike
 
 ENV_DATA_DIR = "RELATIONS_DATA_DIR"
 ENV_MODELS_DIR = "RELATIONS_MODELS_DIR"

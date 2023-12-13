@@ -5,9 +5,9 @@ from collections import defaultdict
 from dataclasses import dataclass, field
 from typing import Any, Literal, NamedTuple, Sequence
 
-from src import data, models
-from src.utils import tokenizer_utils
-from src.utils.typing import Layer, ModelInput, ModelOutput, StrSequence
+from relations.src import data, models
+from relations.src.utils import tokenizer_utils
+from relations.src.utils.typing import Layer, ModelInput, ModelOutput, StrSequence
 
 import baukit
 import torch

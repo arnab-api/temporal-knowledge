@@ -1,9 +1,9 @@
 import logging
 from collections import defaultdict
 
-from src.functional import compute_hidden_states
-from src.models import ModelAndTokenizer, determine_layer_paths
-from src.operators import LinearRelationOperator
+from relations.src.functional import compute_hidden_states
+from relations.src.models import ModelAndTokenizer, determine_layer_paths
+from relations.src.operators import LinearRelationOperator
 
 logger = logging.getLogger(__name__)
 

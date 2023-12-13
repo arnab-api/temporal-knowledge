@@ -4,8 +4,8 @@ import random
 from dataclasses import dataclass, field
 from typing import Any, Literal
 
-from src import data, functional, models
-from src.utils.typing import Layer
+from relations.src import data, functional, models
+from relations.src.utils.typing import Layer
 
 import baukit
 import torch

@@ -7,8 +7,8 @@ from dataclasses import dataclass, fields
 from pathlib import Path
 from typing import Literal, Sequence
 
-from src.utils import env_utils
-from src.utils.typing import PathLike
+from relations.src.utils import env_utils
+from relations.src.utils.typing import PathLike
 
 import torch.utils.data
 from dataclasses_json import DataClassJsonMixin

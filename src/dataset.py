@@ -87,6 +87,7 @@ class TemporalRelation(DataClassJsonMixin, Dataset):
             self.few_shot_demonstrations.append(cur_fact)
 
         # remove icl samples from the dataset
+        icl_indices = sorted(icl_indices, reverse=True)
         for idx in icl_indices:
             self.samples.pop(idx)
 

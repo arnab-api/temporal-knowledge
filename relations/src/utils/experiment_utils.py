@@ -10,8 +10,8 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import TypeVar
 
-from src.utils import env_utils
-from src.utils.typing import PathLike
+from relations.src.utils import env_utils
+from relations.src.utils.typing import PathLike
 
 import numpy
 import torch

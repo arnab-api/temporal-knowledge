@@ -4,10 +4,10 @@ import os
 from collections import defaultdict
 from dataclasses import dataclass, field
 
-from src import data, metrics
-from src.data import RelationSample
-from src.metrics import AggregateMetric
-from src.utils.typing import Layer, PathLike
+from relations.src import data, metrics
+from relations.src.data import RelationSample
+from relations.src.metrics import AggregateMetric
+from relations.src.utils.typing import Layer, PathLike
 
 from dataclasses_json import DataClassJsonMixin
 

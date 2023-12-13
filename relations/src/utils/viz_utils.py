@@ -1,5 +1,5 @@
 """Miscellaneous visualization tools."""
-from src.utils.typing import ArrayLike, PathLike
+from relations.src.utils.typing import ArrayLike, PathLike
 
 import matplotlib.pyplot as plt
 import torch

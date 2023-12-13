@@ -1,8 +1,8 @@
 import logging
 from typing import Any, Sequence, TypeAlias
 
-from src.functional import is_nontrivial_prefix
-from src.models import ModelAndTokenizer
+from relations.src.functional import is_nontrivial_prefix
+from relations.src.models import ModelAndTokenizer
 
 import numpy as np
 import plotly

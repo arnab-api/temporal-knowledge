@@ -4,9 +4,9 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import TypeVar
 
-from src import data, models
-from src.utils import env_utils
-from src.utils.typing import Layer, PathLike
+from relations.src import data, models
+from relations.src.utils import env_utils
+from relations.src.utils.typing import Layer, PathLike
 
 from dataclasses_json import DataClassJsonMixin
 

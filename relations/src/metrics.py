@@ -2,8 +2,8 @@
 from dataclasses import dataclass
 from typing import Sequence
 
-from src import functional
-from src.utils.typing import ArrayLike, StrSequence
+from relations.src import functional
+from relations.src.utils.typing import ArrayLike, StrSequence
 
 import numpy as np
 from dataclasses_json import DataClassJsonMixin

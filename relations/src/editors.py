@@ -4,9 +4,9 @@ from dataclasses import dataclass
 from functools import cached_property
 from typing import Any, Literal
 
-from src import functional, models, operators
-from src.utils import tokenizer_utils
-from src.utils.typing import Layer, ModelInput
+from relations.src import functional, models, operators
+from relations.src.utils import tokenizer_utils
+from relations.src.utils.typing import Layer, ModelInput
 
 import baukit
 import torch

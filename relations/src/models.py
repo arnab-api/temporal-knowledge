@@ -11,8 +11,8 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Iterator, Literal, Optional, Sequence, overload
 
-from src.utils import env_utils, tokenizer_utils
-from src.utils.typing import Device, Layer, Model, ModelInput, Tokenizer
+from relations.src.utils import env_utils, tokenizer_utils
+from relations.src.utils.typing import Device, Layer, Model, ModelInput, Tokenizer
 
 import torch
 import transformers

@@ -256,7 +256,7 @@ def filter_samples_by_model_knowledge(
         )
 
     logger.info(
-        f'filtered relation "{relation.relation_name}" to {len(filtered_samples)} samples'
+        f'filtered relation "{relation.relation_name}" to {len(filtered_samples)} samples (with {relation.properties["num_icl"]}-shots)'
     )
 
     relation.samples = filtered_samples
