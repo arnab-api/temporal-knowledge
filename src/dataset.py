@@ -86,7 +86,11 @@ class TemporalRelation(DataClassJsonMixin, Dataset):
             f'initialized relation -> "{relation_name}" with {len(self)} samples'
         )
 
-    def select_icl_examples(self, num_icl: int) -> list[Sample]:
+    def select_icl_examples(
+        self,
+        num_icl: int,
+        consider_few_shot_samples: bool = True,  # will ignore few-shot samples if False
+    ) -> list[Sample]:
         """
         Selects num_icl samples from the dataset to contextualize the relation.
         Considerations:
@@ -99,6 +103,12 @@ class TemporalRelation(DataClassJsonMixin, Dataset):
         self.few_shot_demonstrations = []
         self.few_shot_samples = []
         icl_indices = []
+
+        self.samples = (
+            self.samples + self.few_shot_samples
+            if consider_few_shot_samples
+            else self.samples
+        )
 
         iter_indices = np.random.permutation(len(self.samples))
         subj_taken = set()
@@ -167,13 +177,18 @@ class TemporalRelation(DataClassJsonMixin, Dataset):
         return self._range
 
     @property
-    def range_stats(self):
+    def range_stats(self) -> str | dict[str, int]:
         counts = {}
         for sample in self.samples:
             if sample.object not in counts:
                 counts[sample.object] = 0
             counts[sample.object] += 1
-        return counts
+        if len(self._range) < 10:
+            return counts
+        else:
+            min = np.min(list(counts.values()))
+            max = np.max(list(counts.values()))
+            return f"range = |{len(self._range)}| count(obj)_min = {min}, count(obj)_max = {max}"
 
 
 def load_relation(

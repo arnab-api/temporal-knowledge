@@ -149,7 +149,7 @@ def predict_next_token(
                     [
                         PredictedToken(
                             token=mt.tokenizer.decode(token_id),
-                            token_id=token_id.item(),
+                            # token_id=token_id.item(),
                             prob=prob.item(),
                         )
                         for token_id, prob in zip(token_ids, token_probs)

@@ -164,7 +164,7 @@ def add_experiment_args(parser: argparse.ArgumentParser) -> None:
         "--results-dir",
         type=Path,
         help="root directory containing experiment results",
-        default="locality_results",
+        default="results",
     )
     parser.add_argument(
         "--resume", action="store_true", default=False, help="resume previous run"

@@ -2,6 +2,7 @@ from dataclasses import dataclass
 from typing import Any, Optional, Union
 
 from src.dataset import Sample, TemporalRelation
+from src.utils.typing import Layer
 
 from dataclasses_json import DataClassJsonMixin
 
@@ -11,7 +12,6 @@ class PredictedToken(DataClassJsonMixin):
     """A predicted token and its probability."""
 
     token: str
-    token_id: int
     prob: float
 
     def __str__(self) -> str:
@@ -26,37 +26,19 @@ class SampleResult(DataClassJsonMixin):
 
 
 @dataclass(frozen=True)
+class LayerResult(DataClassJsonMixin):
+    samples: list[SampleResult]
+    score: float
+
+
+@dataclass(frozen=True)
 class TrialResult(DataClassJsonMixin):
     few_shot_demonstration: str
-    samples: list[SampleResult]
-    recall: list[float]
-
-
-@dataclass(frozen=True)
-class PatchingResults_for_one_pair(DataClassJsonMixin):
-    source_QA: Sample
-    edit_QA: Sample
-    edit_index: int
-    edit_token: str
-    predictions_after_patching: dict[int, list[PredictedToken]]
-    rank_edit_ans_after_patching: dict[int, int]
-
-
-@dataclass(frozen=True)
-class LayerPatchingEfficacy(DataClassJsonMixin):
-    layer_idx: int
-    recall: list[float]
-    reciprocal_rank: float
-
-
-@dataclass(frozen=True)
-class PatchingTrialResult(DataClassJsonMixin):
-    few_shot_demonstration: list[Sample]
-    layer_patching_effecacy: list[LayerPatchingEfficacy]
-    patching_results: list[PatchingResults_for_one_pair]
+    faithfulness: dict[Layer, LayerResult]
+    # efficacy: dict[Layer, float] # TODO: may add this later
 
 
 @dataclass(frozen=True)
 class ExperimentResults(DataClassJsonMixin):
     experiment_specific_args: dict[str, Any]
-    trial_results: Union[list[TrialResult], list[PatchingTrialResult]]
+    trial_results: list[TrialResult]
