@@ -1,11 +1,11 @@
-name, start year, end year
-Said bin Sultan, 1806, 1856
-Thuwaini bin Said, 1856, 1866
-Salim bin Thuwaini, 1866, 1868
-Azzan bin Qais, 1868, 1871
-Turki bin Said, 1871, 1888
-Faisal bin Turki, 1888, 1913
-Taimur bin Faisal, 1913, 1932
-Said bin Taimur, 1932, 1970
-Qaboos bin Said, 1970, 2020
-Haitham bin Tariq, 2020, 2022
+name,gender,start year,end year
+Said bin Sultan,Male,1806,1856
+Thuwaini bin Said,Male,1856,1866
+Salim bin Thuwaini,Male,1866,1868
+Azzan bin Qais,Male,1868,1871
+Turki bin Said,Male,1871,1888
+Faisal bin Turki,Male,1888,1913
+Taimur bin Faisal,Male,1913,1932
+Said bin Taimur,Male,1932,1970
+Qaboos bin Said,Male,1970,2020
+Haitham bin Tariq,Male,2020,2022

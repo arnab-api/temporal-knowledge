@@ -1,15 +1,14 @@
-name, start year, end year
-Charles Robberts Swart, 1961, 1967
-Theophilus Ebenhaezer Dönges, 1967, 1967
-Jozua François Naudé, 1967, 1968
-Jacobus Johannes Fouché, 1968, 1975
-Nicolaas Johannes Diederichs, 1975, 1978
-Marais Viljoen, 1978, 1979
-Balthazar Johannes Vorster, 1979, 1984
-Marais Viljoen, 1984, 1989
-Pieter Willem Botha, 1989, 1994
-Nelson Mandela, 1994, 1999
-Thabo Mbeki, 1999, 2008
-Kgalema Motlanthe, 2008, 2009
-Jacob Zuma, 2009, 2018
-Cyril Ramaphosa, 2018, 2022
+name,gender,start year,end year
+Charles Robberts Swart,Male,1961,1967
+Theophilus Ebenhaezer Dönges,Male,1967,1967
+Jacobus Johannes Fouché,Male,1968,1975
+Nicolaas Johannes Diederichs,Male,1975,1978
+Balthazar Johannes Vorster,Male,1978,1979
+Marais Viljoen,Male,1979,1984
+Pieter Willem Botha,Male,1984,1989
+Frederik Willem de Klerk,Male,1989,1994
+Nelson Mandela,Male,1994,1999
+Thabo Mbeki,Male,1999,2008
+Kgalema Motlanthe,Male,2008,2009
+Jacob Zuma,Male,2009,2018
+Cyril Ramaphosa,Male,2018,2022

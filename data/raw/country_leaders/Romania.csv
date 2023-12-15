@@ -1,18 +1,18 @@
-name, start year, end year
-"Petre Roman","1989","1991"
-"Theodor Stolojan","1991","1992"
-"Nicolae Văcăroiu","1992","1996"
-"Victor Ciorbea","1996","1998"
-"Radu Vasile","1998","1999"
-"Mugur Isărescu","1999","2000"
-"Adrian Năstase","2000","2004"
-"Călin Popescu-Tăriceanu","2004","2008"
-"Emil Boc","2008","2012"
-"Victor Ponta","2012","2015"
-"Dacian Cioloș","2015","2017"
-"Sorin Grindeanu","2017","2017"
-"Mihai Tudose","2017","2018"
-"Viorica Dăncilă","2018","2019"
-"Ludovic Orban","2019","2020"
-"Florin Cîțu","2020","2021"
-"Nicolae Ciucă","2021","2022"
+name,gender,start year,end year
+Petre Roman,Male,1989,1991
+Theodor Stolojan,Male,1991,1992
+Nicolae Văcăroiu,Male,1992,1996
+Victor Ciorbea,Male,1996,1998
+Radu Vasile,Male,1998,1999
+Mugur Isărescu,Male,1999,2000
+Adrian Năstase,Male,2000,2004
+Călin Popescu-Tăriceanu,Male,2004,2008
+Emil Boc,Male,2008,2012
+Victor Ponta,Male,2012,2015
+Dacian Cioloș,Male,2015,2017
+Sorin Grindeanu,Male,2017,2017
+Mihai Tudose,Male,2017,2018
+Viorica Dăncilă,Female,2018,2019
+Ludovic Orban,Male,2019,2020
+Florin Cîțu,Male,2020,2021
+Nicolae Ciucă,Male,2021,2022

@@ -1,9 +1,10 @@
-name, start year, end year
-Ahmed Sékou Touré, 1958, 1984
-Louis Lansana Beavogui, 1984, 1984
-Lansana Conté, 1984, 2008
-Moussa Dadis Camara, 2008, 2009
-Sékouba Konaté, 2009, 2010
-Alpha Condé, 2010, 2020
-Ba N'Daou, 2020, 2021
-Mamady Doumbouya, 2021, 2022
+name,gender,start year,end year
+Ahmed Sékou Touré,Male,1958,1984
+Louis Lansana Beavogui,Male,1984,1984
+Lansana Conté,Male,1984,2008
+Moussa Dadis Camara,Male,2008,2009
+Sékouba Konaté,Male,2009,2010
+Alpha Condé,Male,2010,2020
+Mohamed Beavogui,Male,2020,2020
+Ba N'Daou,Male,2020,2021
+Mamady Doumbouya,Male,2021,2022

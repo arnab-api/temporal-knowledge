@@ -1,5 +1,5 @@
-name, start year, end year
-Samora Machel, 1975, 1986
-Joaquim Chissano, 1986, 2005
-Armando Guebuza, 2005, 2015
-Filipe Nyusi, 2015, 2022
+name,gender,start year,end year
+Samora Machel,Male,1975,1986
+Joaquim Chissano,Male,1986,2005
+Armando Guebuza,Male,2005,2015
+Filipe Nyusi,Male,2015,2022

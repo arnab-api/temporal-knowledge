@@ -1,11 +1,11 @@
-name, start year, end year
-Hamani Diori, 1960, 1974
-Seyni Kountché, 1974, 1987
-Ali Saibou, 1987, 1993
-Mahamane Ousmane, 1993, 1996
-Ibrahim Baré Maïnassara, 1996, 1999
-Daouda Malam Wanké, 1999, 2000
-Mamadou Tandja, 2000, 2010
-Salou Djibo, 2010, 2011
-Mahamadou Issoufou, 2011, 2021
-Mohamed Bazoum, 2021, 2022
+name,gender,start year,end year
+Hamani Diori,Male,1960,1974
+Seyni Kountché,Male,1974,1987
+Ali Saibou,Male,1987,1993
+Mahamane Ousmane,Male,1993,1996
+Ibrahim Baré Maïnassara,Male,1996,1999
+Daouda Malam Wanké,Male,1999,2000
+Mamadou Tandja,Male,2000,2010
+Salou Djibo,Male,2010,2011
+Mahamadou Issoufou,Male,2011,2021
+Mohamed Bazoum,Male,2021,2022

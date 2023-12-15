@@ -1,13 +1,13 @@
-name, start year, end year
-Kwame Nkrumah, 1960, 1966
-Joseph Arthur Ankrah, 1966, 1970
-Akwasi Afrifa, 1970, 1972
-Ignatius Kutu Acheampong, 1972, 1978
-Fred Akuffo, 1978, 1979
-Jerry John Rawlings, 1979, 1979
-Hilla Limann, 1979, 1981
-Jerry John Rawlings, 1981, 2001
-John Agyekum Kufuor, 2001, 2009
-John Atta Mills, 2009, 2012
-John Dramani Mahama, 2012, 2017
-Nana Akufo-Addo, 2017, 2022
+name,gender,start year,end year
+Kwame Nkrumah,Male,1960,1966
+Joseph Arthur Ankrah,Male,1966,1970
+Akwasi Afrifa,Male,1970,1972
+Ignatius Kutu Acheampong,Male,1972,1978
+Fred Akuffo,Male,1978,1979
+Jerry John Rawlings,Male,1979,1979
+Hilla Limann,Male,1979,1981
+Jerry John Rawlings,Male,1981,2001
+John Agyekum Kufuor,Male,2001,2009
+John Atta Mills,Male,2009,2012
+John Dramani Mahama,Male,2012,2017
+Nana Akufo-Addo,Male,2017,2022

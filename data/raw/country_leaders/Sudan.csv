@@ -1,8 +1,11 @@
-name, start year, end year
-Ismail al-Azhari, 1954, 1956
-Abdullah Khalil, 1956, 1958
-Mohamed Ahmed Mahgoub, 1965, 1969
-Sadiq al-Mahdi, 1966, 1967
-Sadiq al-Mahdi, 1986, 1989
-Abdalla Hamdok, 2019, 2021
-Abdalla Hamdok, 2021, 2022
+name,gender,start year,end year
+Ismail al-Azhari,Male,1954,1956
+Abdullah Khalil,Male,1956,1958
+Mohamed Ahmed Mahgoub,Male,1965,1967
+Sadiq al-Mahdi,Male,1966,1967
+Babiker Awadalla,Male,1969,1969
+Gaafar Nimeiry,Male,1969,1985
+Sadiq al-Mahdi,Male,1986,1989
+Al-Jazuli Daf'allah,Male,1989,1993
+Sadiq al-Mahdi,Male,2017,2020
+Abdalla Hamdok,Male,2019,2022

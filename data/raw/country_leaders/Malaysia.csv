@@ -1,10 +1,10 @@
-name, start year, end year
-Tunku Abdul Rahman, 1957, 1970
-Abdul Razak Hussein, 1970, 1976
-Hussein Onn, 1976, 1981
-Mahathir Mohamad, 1981, 2003
-Abdullah Ahmad Badawi, 2003, 2009
-Najib Razak, 2009, 2018
-Mahathir Mohamad, 2018, 2020
-Muhyiddin Yassin, 2020, 2021
-Ismail Sabri Yaakob, 2021, 2022
+name,gender,start year,end year
+Tunku Abdul Rahman,Male,1957,1970
+Abdul Razak Hussein,Male,1970,1976
+Hussein Onn,Male,1976,1981
+Mahathir Mohamad,Male,1981,2003
+Abdullah Ahmad Badawi,Male,2003,2009
+Najib Razak,Male,2009,2018
+Mahathir Mohamad,Male,2018,2020
+Muhyiddin Yassin,Male,2020,2021
+Ismail Sabri Yaakob,Male,2021,2022

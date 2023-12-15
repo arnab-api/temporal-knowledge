@@ -1,46 +1,49 @@
-name, start year, end year
-Jung Bahadur Rana, 1846, 1877
-Ranodip Singh Kunwar, 1877, 1885
-Bir Shumsher Jang Bahadur Rana, 1885, 1901
-Dev Shumsher Jang Bahadur Rana, 1901, 1901
-Chandra Shumsher Jang Bahadur Rana, 1901, 1929
-Bhim Shumsher Jang Bahadur Rana, 1929, 1932
-Juddha Shumsher Jang Bahadur Rana, 1932, 1945
-Padma Shumsher Jang Bahadur Rana, 1945, 1948
-Mohan Shumsher Jang Bahadur Rana, 1948, 1951
-Matrika Prasad Koirala, 1951, 1952
-Matrika Prasad Koirala, 1953, 1955
-Tanka Prasad Acharya, 1956, 1957
-Kunwar Inderjit Singh, 1957, 1957
-Subarna Shamsher Rana, 1957, 1959
-Bishweshwar Prasad Koirala, 1959, 1960
-Tulsi Giri, 1960, 1963
-Surya Bahadur Thapa, 1963, 1964
-Kirti Nidhi Bista, 1969, 1970
-Surya Bahadur Thapa, 1979, 1983
-Lokendra Bahadur Chand, 1983, 1986
-Marich Man Singh Shrestha, 1986, 1990
-Krishna Prasad Bhattarai, 1990, 1991
-Girija Prasad Koirala, 1991, 1994
-Man Mohan Adhikari, 1994, 1995
-Sher Bahadur Deuba, 1995, 1997
-Lokendra Bahadur Chand, 1997, 1997
-Girija Prasad Koirala, 1998, 1999
-Krishna Prasad Bhattarai, 1999, 2000
-Girija Prasad Koirala, 2000, 2001
-Sher Bahadur Deuba, 2001, 2002
-Lokendra Bahadur Chand, 2002, 2003
-Surya Bahadur Thapa, 2003, 2004
-Sher Bahadur Deuba, 2004, 2005
-Girija Prasad Koirala, 2006, 2008
-Pushpa Kamal Dahal, 2008, 2009
-Madhav Kumar Nepal, 2009, 2011
-Jhala Nath Khanal, 2011, 2011
-Baburam Bhattarai, 2011, 2013
-Khil Raj Regmi, 2013, 2014
-Sushil Koirala, 2014, 2015
-Khadga Prasad Oli, 2015, 2016
-Pushpa Kamal Dahal, 2016, 2017
-Sher Bahadur Deuba, 2017, 2018
-Khadga Prasad Oli, 2018, 2021
-Sher Bahadur Deuba, 2021, 2022
+name,gender,start year,end year
+Jung Bahadur Rana,Male,1846,1877
+Ranodip Singh Kunwar,Male,1877,1885
+Bir Shumsher Jang Bahadur Rana,Male,1885,1901
+Dev Shumsher Jang Bahadur Rana,Male,1901,1901
+Chandra Shumsher Jang Bahadur Rana,Male,1901,1929
+Bhim Shumsher Jang Bahadur Rana,Male,1929,1932
+Juddha Shumsher Jang Bahadur Rana,Male,1932,1945
+Padma Shumsher Jang Bahadur Rana,Male,1945,1948
+Mohan Shumsher Jang Bahadur Rana,Male,1948,1951
+Matrika Prasad Koirala,Male,1951,1952
+Matrika Prasad Koirala,Male,1953,1955
+Tanka Prasad Acharya,Male,1956,1957
+Kunwar Inderjit Singh,Male,1957,1957
+Subarna Shamsher Rana,Male,1957,1958
+Bishweshwar Prasad Koirala,Male,1959,1960
+Tulsi Giri,Male,1962,1964
+Surya Bahadur Thapa,Male,1965,1969
+Kirti Nidhi Bista,Male,1969,1970
+Tulsi Giri,Male,1971,1973
+Nagendra Prasad Rijal,Male,1973,1975
+Kirti Nidhi Bista,Male,1977,1979
+Surya Bahadur Thapa,Male,1979,1983
+Lokendra Bahadur Chand,Male,1983,1986
+Marich Man Singh Shrestha,Male,1986,1990
+Krishna Prasad Bhattarai,Male,1990,1991
+Girija Prasad Koirala,Male,1991,1994
+Man Mohan Adhikari,Male,1994,1995
+Sher Bahadur Deuba,Male,1995,1997
+Lokendra Bahadur Chand,Male,1997,1997
+Girija Prasad Koirala,Male,1998,1999
+Krishna Prasad Bhattarai,Male,1999,2000
+Girija Prasad Koirala,Male,2000,2001
+Sher Bahadur Deuba,Male,2001,2002
+Lokendra Bahadur Chand,Male,2002,2003
+Surya Bahadur Thapa,Male,2003,2004
+Sher Bahadur Deuba,Male,2004,2005
+Girija Prasad Koirala,Male,2006,2008
+Pushpa Kamal Dahal,Male,2008,2009
+Madhav Kumar Nepal,Male,2009,2011
+Jhala Nath Khanal,Male,2011,2011
+Baburam Bhattarai,Male,2011,2013
+Khil Raj Regmi,Male,2013,2014
+Sushil Koirala,Male,2014,2015
+Khadga Prasad Oli,Male,2015,2016
+Pushpa Kamal Dahal,Male,2016,2017
+Sher Bahadur Deuba,Male,2017,2018
+Khadga Prasad Oli,Male,2018,2021
+Sher Bahadur Deuba,Male,2021,2022

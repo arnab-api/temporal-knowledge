@@ -1,6 +1,6 @@
-name, start year, end year
-Seretse Khama, 1966, 1980
-Quett Masire, 1980, 1998
-Festus Mogae, 1998, 2008
-Ian Khama, 2008, 2018
-Mokgweetsi Masisi, 2018, 2022
+name,gender,start year,end year
+Seretse Khama,Male,1966,1980
+Quett Masire,Male,1980,1998
+Festus Mogae,Male,1998,2008
+Ian Khama,Male,2008,2018
+Mokgweetsi Masisi,Male,2018,2022

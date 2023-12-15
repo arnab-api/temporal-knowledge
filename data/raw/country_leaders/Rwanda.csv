@@ -1,7 +1,5 @@
-name, start year, end year
-Dominique Mbonyumutwa, 1961, 1961
-Gregoire Kayibanda, 1961, 1973
-Juvenal Habyarimana, 1973, 1994
-Theodore Sindikubwabo, 1994, 1994
-Pasteur Bizimungu, 1994, 2000
-Paul Kagame, 2000, 2022
+name,gender,start year,end year
+Juvenal Habyarimana,Male,1973,1994
+Theodore Sindikubwabo,Male,1994,1994
+Pasteur Bizimungu,Male,1994,2000
+Paul Kagame,Male,2000,2022

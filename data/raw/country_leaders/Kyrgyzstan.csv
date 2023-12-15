@@ -1,7 +1,7 @@
-name, start year, end year
-Askar Akayev, 1990, 2005
-Kurmanbek Bakiyev, 2005, 2010
-Roza Otunbayeva, 2010, 2011
-Almazbek Atambayev, 2011, 2017
-Sooronbay Jeenbekov, 2017, 2020
-Sadyr Japarov, 2020, 2022
+name,gender,start year,end year
+Askar Akayev,Male,1990,2005
+Kurmanbek Bakiyev,Male,2005,2010
+Roza Otunbayeva,Female,2010,2011
+Almazbek Atambayev,Male,2011,2017
+Sooronbay Jeenbekov,Male,2017,2020
+Sadyr Japarov,Male,2020,2022

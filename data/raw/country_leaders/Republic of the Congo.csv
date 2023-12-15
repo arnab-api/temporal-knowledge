@@ -1,8 +1,8 @@
-name, start year, end year
-Fulbert Youlou, 1960, 1963
-Alphonse Massamba-Débat, 1963, 1968
-Marien Ngouabi, 1968, 1977
-Jacques Joachim Yhombi-Opango, 1977, 1979
-Denis Sassou Nguesso, 1979, 1992
-Pascal Lissouba, 1992, 1997
-Denis Sassou Nguesso, 1997, 2022
+name,gender,start year,end year
+Fulbert Youlou,Male,1960,1963
+Alphonse Massamba-Débat,Male,1963,1968
+Marien Ngouabi,Male,1968,1977
+Jacques Joachim Yhombi-Opango,Male,1977,1979
+Denis Sassou Nguesso,Male,1979,1992
+Pascal Lissouba,Male,1992,1997
+Denis Sassou Nguesso,Male,1997,2022

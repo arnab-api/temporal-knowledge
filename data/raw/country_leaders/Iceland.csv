@@ -1,23 +1,26 @@
-name, start year, end year
-Hermann Jónasson, 1942, 1944
-Ólafur Thors, 1944, 1947
-Stefán Jóhann Stefánsson, 1947, 1949
-Ólafur Thors, 1949, 1950
-Stefán Jóhann Stefánsson, 1950, 1953
-Ólafur Thors, 1953, 1958
-Emil Jónsson, 1958, 1959
-Ólafur Thors, 1959, 1963
-Bjarni Benediktsson, 1963, 1970
-Jóhann Hafstein, 1970, 1971
-Ólafur Jóhannesson, 1971, 1974
-Geir Hallgrímsson, 1974, 1978
-Ólafur Jóhannesson, 1978, 1980
-Gunnar Thoroddsen, 1980, 1983
-Steingrímur Hermannsson, 1983, 1991
-Davíð Oddsson, 1991, 2004
-Halldór Ásgrímsson, 2004, 2006
-Geir H. Haarde, 2006, 2009
-Jóhanna Sigurðardóttir, 2009, 2013
-Sigmundur Davíð Gunnlaugsson, 2013, 2016
-Sigurður Ingi Jóhannsson, 2016, 2017
-Katrín Jakobsdóttir, 2017, 2022
+name,gender,start year,end year
+Hermann Jónasson,Male,1934,1942
+Ólafur Thors,Male,1942,1944
+Björn Þórðarson,Male,1944,1947
+Ólafur Thors,Male,1947,1949
+Stefán Jóhann Stefánsson,Male,1949,1950
+Ólafur Thors,Male,1950,1953
+Steingrímur Steinþórsson,Male,1953,1954
+Ólafur Thors,Male,1954,1958
+Hermann Jónasson,Male,1958,1959
+Ólafur Thors,Male,1959,1963
+Bjarni Benediktsson,Male,1963,1970
+Jóhann Hafstein,Male,1970,1971
+Ólafur Jóhannesson,Male,1971,1974
+Geir Hallgrímsson,Male,1974,1978
+Ólafur Jóhannesson,Male,1978,1980
+Gunnar Thoroddsen,Male,1980,1983
+Steingrímur Hermannsson,Male,1983,1991
+Davíð Oddsson,Male,1991,2004
+Halldór Ásgrímsson,Male,2004,2006
+Geir H. Haarde,Male,2006,2009
+Jóhanna Sigurðardóttir,Female,2009,2013
+Sigmundur Davíð Gunnlaugsson,Male,2013,2016
+Sigurður Ingi Jóhannsson,Male,2016,2017
+Bjarni Benediktsson,Male,2017,2021
+Katrin Jakobsdottir,Female,2021,2022

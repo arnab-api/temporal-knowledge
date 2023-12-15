@@ -1,6 +1,5 @@
-name, start year, end year
-Rahmon Nabiyev, 1991, 1992
-Akbarsho Iskandrov (Acting), 1992, 1992
-Rahmon Nabiyev, 1992, 1992
-Akbarsho Iskandrov (Acting), 1992, 1994
-Emomali Rahmon, 1994, 2022
+name,gender,start year,end year
+Rahmon Nabiyev,Male,1991,1992
+Akbarsho Iskandrov,Male,1992,1992
+Rahmon Nabiyev,Male,1992,1992
+Emomali Rahmon,Male,1992,2022

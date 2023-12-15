@@ -1,20 +1,20 @@
-name, start year, end year
-António de Oliveira Salazar, 1932, 1968
-Marcelo Caetano, 1968, 1974
-Adelino da Palma Carlos, 1974, 1974
-Vasco Gonçalves, 1974, 1975
-José Baptista Pinheiro de Azevedo, 1975, 1976
-Alfredo Nobre da Costa, 1978, 1978
-Carlos Mota Pinto, 1978, 1978
-Maria de Lourdes Pintasilgo, 1979, 1980
-Francisco Sá Carneiro, 1980, 1980
-Diogo Freitas do Amaral, 1980, 1981
-Francisco Pinto Balsemão, 1981, 1983
-Mário Soares, 1983, 1985
-Aníbal Cavaco Silva, 1985, 1995
-António Guterres, 1995, 2002
-José Manuel Barroso, 2002, 2004
-Pedro Santana Lopes, 2004, 2005
-José Sócrates, 2005, 2011
-Pedro Passos Coelho, 2011, 2015
-António Costa, 2015, 2022
+name,gender,start year,end year
+António de Oliveira Salazar,Male,1932,1968
+Marcelo Caetano,Male,1968,1974
+Adelino da Palma Carlos,Male,1974,1974
+Vasco Gonçalves,Male,1974,1975
+José Baptista Pinheiro de Azevedo,Male,1975,1976
+Alfredo Nobre da Costa,Male,1978,1978
+Carlos Mota Pinto,Male,1978,1979
+Maria de Lourdes Pintasilgo,Female,1979,1980
+Francisco Sá Carneiro,Male,1980,1980
+Diogo Freitas do Amaral,Male,1980,1981
+Francisco Pinto Balsemão,Male,1981,1983
+Mário Soares,Male,1983,1985
+Aníbal Cavaco Silva,Male,1985,1995
+António Guterres,Male,1995,2002
+José Manuel Durão Barroso,Male,2002,2004
+Pedro Santana Lopes,Male,2004,2005
+José Sócrates,Male,2005,2011
+Pedro Passos Coelho,Male,2011,2015
+António Costa,Male,2015,2022

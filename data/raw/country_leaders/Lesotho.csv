@@ -1,10 +1,10 @@
-name, start year, end year
-Leabua Jonathan, 1965, 1986
-Justin Lekhanya, 1986, 1991
-Elias Phisoana Ramaema, 1991, 1993
-Ntsu Mokhehle, 1993, 1998
-Pakalitha Mosisili, 1998, 2012
-Tom Thabane, 2012, 2015
-Pakalitha Mosisili, 2015, 2017
-Tom Thabane, 2017, 2020
-Moeketsi Majoro, 2020, 2022
+name,gender,start year,end year
+Leabua Jonathan,Male,1965,1986
+Justin Lekhanya,Male,1986,1991
+Elias Phisoana Ramaema,Male,1991,1993
+Ntsu Mokhehle,Male,1993,1998
+Pakalitha Mosisili,Male,1998,2012
+Tom Thabane,Male,2012,2015
+Pakalitha Mosisili,Male,2015,2017
+Tom Thabane,Male,2017,2020
+Moeketsi Majoro,Male,2020,2022

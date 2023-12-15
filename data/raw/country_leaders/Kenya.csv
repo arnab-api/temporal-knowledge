@@ -1,5 +1,5 @@
-name, start year, end year
-Jomo Kenyatta, 1964, 1978
-Daniel arap Moi, 1978, 2002
-Mwai Kibaki, 2002, 2013
-Uhuru Kenyatta, 2013, 2022
+name,gender,start year,end year
+Jomo Kenyatta,Male,1964,1978
+Daniel arap Moi,Male,1978,2002
+Mwai Kibaki,Male,2002,2013
+Uhuru Kenyatta,Male,2013,2022

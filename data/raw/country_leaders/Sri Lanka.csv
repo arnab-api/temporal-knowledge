@@ -1,9 +1,9 @@
-name, start year, end year
-William Gopallawa, 1972, 1978
-Junius Richard Jayewardene, 1978, 1989
-Ranasinghe Premadasa, 1989, 1993
-Dingiri Banda Wijetunga, 1993, 1994
-Chandrika Kumaratunga, 1994, 2005
-Mahinda Rajapaksa, 2005, 2015
-Maithripala Sirisena, 2015, 2019
-Gotabaya Rajapaksa, 2019, 2022
+name,gender,start year,end year
+William Gopallawa,Male,1972,1978
+J. R. Jayewardene,Male,1978,1989
+Ranasinghe Premadasa,Male,1989,1993
+Dingiri Banda Wijetunga,Male,1993,1994
+Chandrika Kumaratunga,Female,1994,2005
+Mahinda Rajapaksa,Male,2005,2015
+Maithripala Sirisena,Male,2015,2019
+Gotabaya Rajapaksa,Male,2019,2022

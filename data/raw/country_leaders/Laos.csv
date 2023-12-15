@@ -1,8 +1,8 @@
-name, start year, end year
-Souphanouvong, 1975, 1991
-Kaysone Phomvihane, 1991, 1992
-Nouhak Phoumsavanh, 1992, 1998
-Khamtai Siphandon, 1998, 2006
-Choummaly Sayasone, 2006, 2016
-Bounnhang Vorachith, 2016, 2021
-Thongloun Sisoulith, 2021, 2022
+name,gender,start year,end year
+Souphanouvong,Male,1975,1986
+Kaysone Phomvihane,Male,1986,1992
+Nouhak Phoumsavanh,Male,1992,1998
+Khamtai Siphandon,Male,1998,2006
+Choummaly Sayasone,Male,2006,2016
+Bounnhang Vorachith,Male,2016,2021
+Thongloun Sisoulith,Male,2021,2022

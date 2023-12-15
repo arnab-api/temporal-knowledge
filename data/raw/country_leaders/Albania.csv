@@ -1,11 +1,11 @@
-name, start year, end year
-Fatos Nano, 1991, 1992
-Aleksandër Meksi, 1992, 1997
-Bashkim Fino, 1997, 1997
-Fatos Nano, 1997, 1998
-Pandeli Majko, 1998, 1999
-Ilir Meta, 1999, 2002
-Pandeli Majko, 2002, 2002
-Fatos Nano, 2002, 2005
-Sali Berisha, 2005, 2013
-Edi Rama, 2013, 2022
+name,gender,start year,end year
+Fatos Nano,Male,1991,1992
+Aleksandër Meksi,Male,1992,1997
+Bashkim Fino,Male,1997,1997
+Fatos Nano,Male,1997,1998
+Pandeli Majko,Male,1998,1999
+Ilir Meta,Male,1999,2002
+Pandeli Majko,Male,2002,2002
+Fatos Nano,Male,2002,2005
+Sali Berisha,Male,2005,2013
+Edi Rama,Male,2013,2022

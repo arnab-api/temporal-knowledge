@@ -1,11 +1,13 @@
-name, start year, end year
-Vladimír Mečiar, 1993, 1994
-Jozef Moravčík, 1994, 1994
-Vladimír Mečiar, 1994, 1998
-Mikuláš Dzurinda, 1998, 2006
-Robert Fico, 2006, 2010
-Iveta Radičová, 2010, 2012
-Robert Fico, 2012, 2018
-Peter Pellegrini, 2018, 2020
-Igor Matovič, 2020, 2021
-Eduard Heger, 2021, 2022
+name,gender,start year,end year
+Vladimír Mečiar,Male,1990,1991
+Ján Čarnogurský,Male,1991,1992
+Vladimír Mečiar,Male,1992,1994
+Jozef Moravčík,Male,1994,1994
+Vladimír Mečiar,Male,1994,1998
+Mikuláš Dzurinda,Male,1998,2006
+Robert Fico,Male,2006,2010
+Iveta Radičová,Female,2010,2012
+Robert Fico,Male,2012,2018
+Peter Pellegrini,Male,2018,2020
+Igor Matovič,Male,2020,2021
+Eduard Heger,Male,2021,2022

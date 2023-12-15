@@ -1,43 +1,10 @@
-name, start year, end year
-Manuel Blanco Encalada, 1826, 1826
-Agustín Eyzaguirre, 1826, 1827
-Ramón Freire, 1827, 1829
-Francisco Antonio Pinto, 1827, 1829
-Francisco Ramón Vicuña, 1829, 1829
-José Tomás Ovalle, 1829, 1831
-Fernando Errázuriz Aldunate, 1831, 1831
-José Joaquín Prieto, 1831, 1841
-Manuel Bulnes, 1841, 1851
-Manuel Montt, 1851, 1861
-José Joaquín Pérez, 1861, 1871
-Federico Errázuriz Zañartu, 1871, 1876
-Aníbal Pinto, 1876, 1881
-Domingo Santa María, 1881, 1886
-José Manuel Balmaceda, 1886, 1891
-Jorge Montt, 1891, 1896
-Federico Errázuriz Echaurren, 1896, 1901
-Germán Riesco, 1901, 1906
-Pedro Montt, 1906, 1910
-Ramón Barros Luco, 1910, 1915
-Juan Luis Sanfuentes, 1915, 1920
-Arturo Alessandri, 1920, 1925
-Emiliano Figueroa, 1925, 1927
-Carlos Ibáñez del Campo, 1927, 1931
-Juan Esteban Montero, 1931, 1932
-Arturo Alessandri, 1932, 1938
-Pedro Aguirre Cerda, 1938, 1941
-Jerónimo Méndez, 1941, 1942
-Juan Antonio Ríos, 1942, 1946
-Gabriel González Videla, 1946, 1952
-Carlos Ibáñez del Campo, 1952, 1958
-Jorge Alessandri, 1958, 1964
-Eduardo Frei Montalva, 1964, 1970
-Salvador Allende, 1970, 1973
-Augusto Pinochet, 1973, 1990
-Patricio Aylwin, 1990, 1994
-Eduardo Frei Ruiz-Tagle, 1994, 2000
-Ricardo Lagos, 2000, 2006
-Michelle Bachelet, 2006, 2010
-Sebastián Piñera, 2010, 2014
-Michelle Bachelet, 2014, 2018
-Sebastián Piñera, 2018, 2022
+name,gender,start year,end year
+Salvador Allende,Male,1970,1973
+Augusto Pinochet,Male,1973,1990
+Patricio Aylwin,Male,1990,1994
+Eduardo Frei Ruiz-Tagle,Male,1994,2000
+Ricardo Lagos,Male,2000,2006
+Michelle Bachelet,Female,2006,2010
+Sebastián Piñera,Male,2010,2014
+Michelle Bachelet,Female,2014,2018
+Sebastián Piñera,Male,2018,2022

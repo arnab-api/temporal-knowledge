@@ -1,19 +1,15 @@
-name, start year, end year
-Tengiz Sigua, 1992, 1993
-Eduard Shevardnadze, 1993, 1995
-Nikoloz Lekishvili, 1995, 1998
-Vazha Lordkipanidze, 1998, 2000
-Giorgi Arsenishvili, 2000, 2001
-Avtandil Jorbenadze, 2001, 2003
-Zurab Zhvania, 2003, 2005
-Zurab Nogaideli, 2005, 2007
-Lado Gurgenidze, 2007, 2008
-Grigol Mgaloblishvili, 2008, 2009
-Nika Gilauri, 2009, 2012
-Vano Merabishvili, 2012, 2012
-Bidzina Ivanishvili, 2012, 2013
-Irakli Garibashvili, 2013, 2015
-Giorgi Kvirikashvili, 2015, 2018
-Mamuka Bakhtadze, 2018, 2019
-Giorgi Gakharia, 2019, 2020
-Irakli Garibashvili, 2021, 2022
+name,gender,start year,end year
+Zviad Gamsakhurdia,Male,1991,1992
+Eduard Shevardnadze,Male,1992,2003
+Zurab Zhvania,Male,2003,2005
+Zurab Nogaideli,Male,2005,2007
+Lado Gurgenidze,Male,2007,2008
+Grigol Mgaloblishvili,Male,2008,2009
+Nika Gilauri,Male,2009,2012
+Vano Merabishvili,Male,2012,2012
+Bidzina Ivanishvili,Male,2012,2013
+Irakli Garibashvili,Male,2013,2015
+Giorgi Kvirikashvili,Male,2015,2018
+Mamuka Bakhtadze,Male,2018,2019
+Giorgi Gakharia,Male,2019,2020
+Irakli Garibashvili,Male,2021,2022

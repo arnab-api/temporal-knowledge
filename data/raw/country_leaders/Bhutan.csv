@@ -1,11 +1,17 @@
-name, start year, end year
-Jigme Palden Dorji, 1952, 1964
-Lyonpo Jigme Thinley, 1998, 1999
-Lyonpo Sangay Ngedup, 1999, 2000
-Lyonpo Khandu Wangchuk, 2001, 2002
-Lyonpo Jigme Thinley, 2003, 2004
-Lyonpo Sangay Ngedup, 2005, 2006
-Lyonpo Khandu Wangchuk, 2007, 2008
-Jigme Yoser Thinley, 2008, 2013
-Tshering Tobgay, 2013, 2018
-Lotay Tshering, 2018, 2022
+name,gender,start year,end year
+Jigme Palden Dorji,Male,1952,1964
+Lhendup Dorji,Male,1964,1964
+Jigme Dorji Wangchuck,Male,1964,1972
+Jigme Singye Wangchuck,Male,1972,1998
+Sangay Ngedup,Male,1998,1999
+Khandu Wangchuk,Male,1999,2000
+Yeshey Zimba,Male,2000,2001
+Kinley Dorji,Male,2001,2002
+Yeshey Zimba,Male,2002,2003
+Jigmi Y. Thinley,Male,2003,2004
+Sangay Ngedup,Male,2004,2005
+Khandu Wangchuk,Male,2005,2006
+Kinzang Dorji,Male,2006,2007
+Jigmi Y. Thinley,Male,2008,2013
+Tshering Tobgay,Male,2013,2018
+Lotay Tshering,Male,2018,2022

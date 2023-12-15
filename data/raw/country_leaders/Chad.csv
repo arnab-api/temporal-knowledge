@@ -1,7 +1,8 @@
-name, start year, end year
-François Tombalbaye, 1960, 1975
-Félix Malloum, 1975, 1979
-Goukouni Oueddei, 1979, 1982
-Hissène Habré, 1982, 1990
-Idriss Déby, 1990, 2021
-Mahamat Déby, 2021, 2022
+name,gender,start year,end year
+François Tombalbaye,Male,1960,1975
+Noël Milarew Odingar,Male,1975,1975
+Félix Malloum,Male,1975,1979
+Goukouni Oueddei,Male,1979,1982
+Hissène Habré,Male,1982,1990
+Idriss Déby,Male,1990,2021
+Mahamat Déby,Male,2021,2022

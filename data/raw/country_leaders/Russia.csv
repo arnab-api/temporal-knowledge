@@ -1,5 +1,5 @@
-name, start year, end year
-Boris Yeltsin, 1991, 1999
-Vladimir Putin, 1999, 2008
-Dmitry Medvedev, 2008, 2012
-Vladimir Putin, 2012, 2022
+name,gender,start year,end year
+Boris Yeltsin,Male,1991,1999
+Vladimir Putin,Male,1999,2008
+Dmitry Medvedev,Male,2008,2012
+Vladimir Putin,Male,2012,2022

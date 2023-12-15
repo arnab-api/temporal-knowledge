@@ -1,9 +1,9 @@
-name, start year, end year
-Kenneth Kaunda, 1964, 1991
-Frederick Chiluba, 1991, 2002
-Levy Mwanawasa, 2002, 2008
-Rupiah Banda, 2008, 2011
-Michael Sata, 2011, 2014
-Guy Scott, 2014, 2015
-Edgar Lungu, 2015, 2021
-Hakainde Hichilema, 2021, 2022
+name,gender,start year,end year
+Kenneth Kaunda,Male,1964,1991
+Frederick Chiluba,Male,1991,2002
+Levy Mwanawasa,Male,2002,2008
+Rupiah Banda,Male,2008,2011
+Michael Sata,Male,2011,2014
+Guy Scott,Male,2014,2015
+Edgar Lungu,Male,2015,2021
+Hakainde Hichilema,Male,2021,2022

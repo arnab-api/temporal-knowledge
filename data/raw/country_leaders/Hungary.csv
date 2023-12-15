@@ -1,9 +1,55 @@
-name, start year, end year
-József Antall, 1990, 1993
-Péter Boross, 1993, 1994
-Gyula Horn, 1994, 1998
-Viktor Orbán, 1998, 2002
-Péter Medgyessy, 2002, 2004
-Ferenc Gyurcsány, 2004, 2009
-Gordon Bajnai, 2009, 2010
-Viktor Orbán, 2010, 2022
+name,gender,start year,end year
+Viktor Orbán,Male,2010,2022
+Gordon Bajnai,Male,2009,2010
+Ferenc Gyurcsány,Male,2004,2009
+Péter Medgyessy,Male,2002,2004
+Viktor Orbán,Male,1998,2002
+Gyula Horn,Male,1994,1998
+Péter Boross,Male,1993,1994
+József Antall,Male,1990,1993
+Miklós Németh,Male,1988,1990
+Károly Grósz,Male,1987,1988
+György Lázár,Male,1975,1987
+Jenő Fock,Male,1967,1975
+Gyula Kállai,Male,1965,1967
+János Kádár,Male,1956,1958
+András Hegedüs,Male,1955,1956
+Imre Nagy,Male,1953,1955
+Mátyás Rákosi,Male,1952,1953
+István Dobi,Male,1948,1952
+Lajos Dinnyés,Male,1947,1948
+Ferenc Nagy,Male,1946,1947
+Zoltán Tildy,Male,1945,1946
+Béla Miklós,Male,1944,1945
+Döme Sztójay,Male,1944,1944
+Miklós Kállay,Male,1942,1944
+László Bárdossy,Male,1941,1942
+Pál Teleki,Male,1939,1941
+Béla Imrédy,Male,1938,1939
+Kálmán Darányi,Male,1936,1938
+Gyula Gömbös,Male,1932,1936
+István Bethlen,Male,1921,1931
+Sándor Simonyi-Semadam,Male,1920,1921
+Mihály Károlyi,Male,1919,1919
+Dénes Berinkey,Male,1919,1919
+János Hadik,Male,1918,1918
+Sándor Wekerle,Male,1917,1918
+Móric Esterházy,Male,1917,1917
+István Tisza,Male,1913,1917
+Lajos Lukács,Male,1912,1913
+Károly Khuen-Héderváry,Male,1910,1912
+Sándor Wekerle,Male,1906,1910
+Géza Fejérváry,Male,1903,1905
+Kálmán Széll,Male,1899,1903
+Dezső Bánffy,Male,1895,1899
+Sándor Wekerle,Male,1892,1895
+Gyula Szapáry,Male,1890,1892
+Kálmán Tisza,Male,1875,1890
+Béla Wenckheim,Male,1875,1875
+Károly Hegedűs,Male,1874,1875
+József Szlávy,Male,1872,1874
+Menyhért Lónyay,Male,1871,1872
+József Szlávy,Male,1870,1871
+Gyula Andrássy,Male,1867,1871
+Bertalan Szemere,Male,1849,1849
+Lajos Batthyány,Male,1848,1849

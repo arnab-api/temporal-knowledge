@@ -1,8 +1,8 @@
-name, start year, end year
-Mao Zedong, 1949, 1976
-Hua Guofeng, 1976, 1981
-Hu Yaobang, 1981, 1987
-Zhao Ziyang, 1987, 1989
-Jiang Zemin, 1989, 2004
-Hu Jintao, 2004, 2013
-Xi Jinping, 2013, 2022
+name,gender,start year,end year
+Mao Zedong,Male,1949,1976
+Hua Guofeng,Male,1976,1981
+Hu Yaobang,Male,1981,1987
+Zhao Ziyang,Male,1987,1989
+Jiang Zemin,Male,1989,2004
+Hu Jintao,Male,2004,2013
+Xi Jinping,Male,2013,2022

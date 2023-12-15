@@ -1,45 +1,15 @@
-name, start year, end year
-Louis De Geer, 1876, 1880
-Arvid Posse, 1880, 1883
-Carl Johan Thyselius, 1883, 1884
-Robert Themptander, 1884, 1888
-Gillis Bildt, 1888, 1891
-Erik Gustaf Boström, 1891, 1900
-Fredrik von Otter, 1900, 1902
-Erik Gustaf Boström, 1902, 1905
-Johan Ramstedt, 1905, 1905
-Christian Lundeberg, 1905, 1905
-Karl Staaff, 1905, 1906
-Arvid Lindman, 1906, 1911
-Karl Staaff, 1911, 1914
-Hjalmar Hammarskjöld, 1914, 1917
-Carl Swartz, 1917, 1917
-Nils Edén, 1917, 1920
-Hjalmar Branting, 1920, 1920
-Gerhard Louis De Geer, 1920, 1921
-Oscar von Sydow, 1921, 1921
-Hjalmar Branting, 1921, 1923
-Ernst Trygger, 1923, 1924
-Hjalmar Branting, 1924, 1925
-Rickard Sandler, 1925, 1926
-Carl Gustaf Ekman, 1926, 1928
-Arvid Lindman, 1928, 1930
-Carl Gustaf Ekman, 1930, 1932
-Felix Hamrin, 1932, 1932
-Per Albin Hansson, 1932, 1936
-Axel Pehrsson-Bramstorp, 1936, 1936
-Per Albin Hansson, 1936, 1946
-Tage Erlander, 1946, 1969
-Olof Palme, 1969, 1976
-Thorbjörn Fälldin, 1976, 1978
-Ola Ullsten, 1978, 1979
-Thorbjörn Fälldin, 1979, 1982
-Olof Palme, 1982, 1986
-Ingvar Carlsson, 1986, 1991
-Carl Bildt, 1991, 1994
-Ingvar Carlsson, 1994, 1996
-Göran Persson, 1996, 2006
-Fredrik Reinfeldt, 2006, 2014
-Stefan Löfven, 2014, 2021
-Magdalena Andersson, 2021, 2021
-Magdalena Andersson, 2021, 2022
+name,gender,start year,end year
+Olof Palme,Male,1969,1976
+Torbjörn Fälldin,Male,1976,1978
+Ola Ullsten,Male,1978,1979
+Torbjörn Fälldin,Male,1979,1982
+Olof Palme,Male,1982,1986
+Ingvar Carlsson,Male,1986,1991
+Carl Bildt,Male,1991,1994
+Ingvar Carlsson,Male,1994,1996
+Göran Persson,Male,1996,2006
+Fredrik Reinfeldt,Male,2006,2014
+Stefan Löfven,Male,2014,2021
+Magdalena Andersson,Female,2021,2021
+Stefan Löfven,Male,2021,2022
+Magdalena Andersson,Female,2022,2022

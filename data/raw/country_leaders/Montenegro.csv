@@ -1,3 +1,4 @@
-name, start year, end year
-Filip Vujanović, 2003, 2018
-Milo Đukanović, 2018, 2022
+name,gender,start year,end year
+Milo Đukanović,Male,1998,2002
+Filip Vujanović,Male,2003,2018
+Milo Đukanović,Male,2018,2022

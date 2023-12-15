@@ -1,17 +1,16 @@
-name, start year, end year
-Vazgen Manukyan, 1990, 1991
-Gagik Harutyunyan, 1991, 1992
-Khoren Abrahamyan, 1992, 1993
-Hrant Bagratyan, 1993, 1996
-Armen Sarkissian, 1996, 1997
-Robert Kocharyan, 1997, 1998
-Armen Darbinyan, 1998, 1999
-Aram Sargsyan, 1999, 2000
-Andranik Margaryan, 2000, 2007
-Serzh Sargsyan, 2007, 2008
-Tigran Sargsyan, 2008, 2014
-Hovik Abrahamyan, 2014, 2016
-Karen Karapetyan, 2016, 2018
-Nikol Pashinyan, 2018, 2020
-Arayik Harutyunyan, 2020, 2021
-Nikol Pashinyan, 2021, 2022
+name,gender,start year,end year
+Vazgen Manukyan,Male,1990,1991
+Gagik Harutyunyan,Male,1991,1992
+Khoren Abrahamyan,Male,1992,1993
+Hrant Bagratyan,Male,1993,1996
+Armen Sarkissian,Male,1996,1997
+Robert Kocharyan,Male,1997,1998
+Armen Darbinyan,Male,1998,1999
+Vazgen Sargsyan,Male,1999,1999
+Aram Sargsyan,Male,1999,2000
+Andranik Margaryan,Male,2000,2007
+Serzh Sargsyan,Male,2007,2008
+Tigran Sargsyan,Male,2008,2014
+Hovik Abrahamyan,Male,2014,2016
+Karen Karapetyan,Male,2016,2018
+Nikol Pashinyan,Male,2018,2022

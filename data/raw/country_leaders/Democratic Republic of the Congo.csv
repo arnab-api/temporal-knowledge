@@ -1,6 +1,6 @@
-name, start year, end year
-Joseph Kasa-Vubu, 1960, 1965
-Joseph-Désiré Mobutu (Mobutu Sese Seko), 1965, 1997
-Laurent-Désiré Kabila, 1997, 2001
-Joseph Kabila, 2001, 2019
-Félix Tshisekedi, 2019, 2022
+name,gender,start year,end year
+Joseph Kasa-Vubu,Male,1960,1965
+Joseph Mobutu (Mobutu Sese Seko),Male,1965,1997
+Laurent-Désiré Kabila,Male,1997,2001
+Joseph Kabila,Male,2001,2019
+Félix Tshisekedi,Male,2019,2022

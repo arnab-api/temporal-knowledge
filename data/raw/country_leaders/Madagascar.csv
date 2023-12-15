@@ -1,11 +1,12 @@
-name, start year, end year
-Philibert Tsiranana, 1959, 1972
-Gabriel Ramanantsoa, 1972, 1975
-Richard Ratsimandrava, 1975, 1975
-Didier Ratsiraka, 1975, 1993
-Albert Zafy, 1993, 1996
-Didier Ratsiraka, 1996, 2002
-Marc Ravalomanana, 2002, 2009
-Andry Rajoelina, 2009, 2014
-Hery Rajaonarimampianina, 2014, 2018
-Andry Rajoelina, 2019, 2022
+name,gender,start year,end year
+Philibert Tsiranana,Male,1959,1972
+Gabriel Ramanantsoa,Male,1972,1975
+Richard Ratsimandrava,Male,1975,1975
+Gilles Andriamahazo,Male,1975,1976
+Didier Ratsiraka,Male,1976,1993
+Albert Zafy,Male,1993,1996
+Didier Ratsiraka,Male,1996,2002
+Marc Ravalomanana,Male,2002,2009
+Andry Rajoelina,Male,2009,2014
+Hery Rajaonarimampianina,Male,2014,2018
+Andry Rajoelina,Male,2018,2022

@@ -1,19 +1,19 @@
-name, start year, end year
-Jawaharlal Nehru, 1947, 1964
-Gulzarilal Nanda, 1964, 1964
-Lal Bahadur Shastri, 1964, 1966
-Gulzarilal Nanda, 1966, 1966
-Indira Gandhi, 1966, 1977
-Morarji Desai, 1977, 1979
-Charan Singh, 1979, 1980
-Indira Gandhi, 1980, 1984
-Rajiv Gandhi, 1984, 1989
-Vishwanath Pratap Singh, 1989, 1990
-Chandra Shekhar, 1990, 1991
-P. V. Narasimha Rao, 1991, 1996
-Atal Bihari Vajpayee, 1996, 1996
-H. D. Deve Gowda, 1996, 1997
-Inder Kumar Gujral, 1997, 1998
-Atal Bihari Vajpayee, 1998, 2004
-Manmohan Singh, 2004, 2014
-Narendra Modi, 2014, 2022
+name,gender,start year,end year
+Jawaharlal Nehru,Male,1947,1964
+Gulzarilal Nanda,Male,1964,1964
+Lal Bahadur Shastri,Male,1964,1966
+Gulzarilal Nanda,Male,1966,1966
+Indira Gandhi,Female,1966,1977
+Morarji Desai,Male,1977,1979
+Charan Singh,Male,1979,1980
+Indira Gandhi,Female,1980,1984
+Rajiv Gandhi,Male,1984,1989
+Vishwanath Pratap Singh,Male,1989,1990
+Chandra Shekhar,Male,1990,1991
+P. V. Narasimha Rao,Male,1991,1996
+Atal Bihari Vajpayee,Male,1996,1996
+H. D. Deve Gowda,Male,1996,1997
+Inder Kumar Gujral,Male,1997,1998
+Atal Bihari Vajpayee,Male,1998,2004
+Manmohan Singh,Male,2004,2014
+Narendra Modi,Male,2014,2022

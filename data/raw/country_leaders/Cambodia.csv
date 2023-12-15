@@ -1,23 +1,26 @@
-name, start year, end year
-Norodom Sihanouk, 1945, 1952
-Penn Nouth, 1952, 1953
-Norodom Sihanouk, 1953, 1954
-Penn Nouth, 1954, 1958
-Norodom Sihanouk, 1958, 1960
-Penn Nouth, 1960, 1961
-Norodom Sihanouk, 1961, 1962
-Penn Nouth, 1962, 1963
-Norodom Sihanouk, 1963, 1966
-Lon Nol, 1966, 1967
-Son Sann, 1967, 1968
-Lon Nol, 1968, 1971
-Hang Thun Hak, 1971, 1972
-Long Boret, 1972, 1975
-Penn Nouth, 1975, 1976
-Pol Pot, 1976, 1979
-Heng Samrin, 1979, 1981
-Chan Sy, 1981, 1984
-Hun Sen, 1985, 1993
-Norodom Ranariddh, 1993, 1997
-Ung Huot, 1997, 1998
-Hun Sen, 1998, 2022
+name,gender,start year,end year
+Norodom Sihanouk,Male,1945,1951
+Sisowath Youtevong,Male,1951,1952
+Norodom Sihanouk,Male,1952,1953
+Sisowath Monireth,Male,1953,1954
+Norodom Sihanouk,Male,1954,1955
+Penn Nouth,Male,1955,1958
+Ek Yi Oun,Male,1958,1958
+Penn Nouth,Male,1958,1960
+Norodom Sihanouk,Male,1960,1962
+Nhiek Tioulong,Male,1962,1966
+Lon Nol,Male,1966,1967
+Son Sann,Male,1967,1968
+Penn Nouth,Male,1968,1971
+Lon Nol,Male,1971,1972
+Hang Thun Hak,Male,1972,1973
+In Tam,Male,1973,1973
+Long Boret,Male,1973,1975
+Penn Nouth,Male,1975,1976
+Pol Pot,Male,1976,1979
+Heng Samrin,Male,1979,1981
+Chan Sy,Male,1981,1984
+Hun Sen,Male,1985,1993
+Norodom Ranariddh,Male,1993,1997
+Ung Huot,Male,1997,1998
+Hun Sen,Male,1998,2022

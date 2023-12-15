@@ -1,6 +1,6 @@
-name, start year, end year
-James Mancham, 1976, 1977
-France-Albert René, 1977, 2004
-James Michel, 2004, 2016
-Danny Faure, 2016, 2020
-Wavel Ramkalawan, 2020, 2022
+name,gender,start year,end year
+James Mancham,Male,1976,1977
+France-Albert René,Male,1977,2004
+James Michel,Male,2004,2016
+Danny Faure,Male,2016,2020
+Wavel Ramkalawan,Male,2020,2022

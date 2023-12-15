@@ -1,9 +1,7 @@
-name, start year, end year
-Sheikh Mohammed bin Thani, 1850, 1878
-Sheikh Jassim bin Mohammed Al Thani, 1878, 1913
-Sheikh Abdullah bin Jassim Al Thani, 1913, 1949
-Sheikh Ali bin Abdullah Al Thani, 1949, 1960
-Sheikh Ahmad bin Ali Al Thani, 1960, 1972
-Sheikh Khalifa bin Hamad Al Thani, 1972, 1995
-Sheikh Hamad bin Khalifa Al Thani, 1995, 2013
-Sheikh Tamim bin Hamad Al Thani, 2013, 2022
+name,gender,start year,end year
+Sheikh Abdullah bin Jassim Al Thani,Male,1913,1949
+Sheikh Ali bin Abdullah Al Thani,Male,1949,1960
+Sheikh Ahmad bin Ali Al Thani,Male,1960,1972
+Sheikh Khalifa bin Hamad Al Thani,Male,1972,1995
+Sheikh Hamad bin Khalifa Al Thani,Male,1995,2013
+Sheikh Tamim bin Hamad Al Thani,Male,2013,2022

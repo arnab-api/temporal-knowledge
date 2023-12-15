@@ -1,7 +1,6 @@
-name, start year, end year
-Sylvanus Olympio, 1960, 1963
-Nicolas Grunitzky, 1963, 1967
-Kléber Dadjo (acting), 1967, 1967
-Gnassingbé Eyadéma, 1967, 2005
-Bonfoh Abass (acting), 2005, 2005
-Faure Gnassingbé, 2005, 2022
+name,gender,start year,end year
+Sylvanus Olympio,Male,1960,1963
+Nicolas Grunitzky,Male,1963,1967
+Kléber Dadjo,Male,1967,1967
+Gnassingbé Eyadéma,Male,1967,2005
+Faure Gnassingbé,Male,2005,2022

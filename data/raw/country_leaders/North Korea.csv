@@ -1,4 +1,4 @@
-name, start year, end year
-Kim Il-sung, 1948, 1994
-Kim Jong-il, 1994, 2011
-Kim Jong-un, 2011, 2022
+name,gender,start year,end year
+Kim Il-sung,Male,1948,1994
+Kim Jong-il,Male,1994,2011
+Kim Jong-un,Male,2011,2022

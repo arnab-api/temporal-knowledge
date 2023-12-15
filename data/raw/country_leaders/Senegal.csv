@@ -1,5 +1,5 @@
-name, start year, end year
-Léopold Sédar Senghor, 1960, 1980
-Abdou Diouf, 1981, 2000
-Abdoulaye Wade, 2000, 2012
-Macky Sall, 2012, 2022
+name,gender,start year,end year
+Léopold Sédar Senghor,Male,1960,1980
+Abdou Diouf,Male,1981,2000
+Abdoulaye Wade,Male,2000,2012
+Macky Sall,Male,2012,2022

@@ -1,17 +1,56 @@
-name, start year, end year
-Mark Rutte, 2010, 2022
-Jan Peter Balkenende, 2002, 2010
-Wim Kok, 1994, 2002
-Ruud Lubbers, 1982, 1994
-Dries van Agt, 1977, 1982
-Joop den Uyl, 1973, 1977
-Barend Biesheuvel, 1971, 1973
-Piet de Jong, 1967, 1971
-Jelle Zijlstra, 1966, 1967
-Jo Cals, 1965, 1966
-Victor Marijnen, 1963, 1965
-Jan de Quay, 1959, 1963
-Louis Beel, 1958, 1959
-Willem Drees, 1948, 1958
-Louis Beel, 1946, 1948
-Wim Schermerhorn, 1945, 1946
+name,gender,start year,end year
+Mark Rutte,Male,2010,2022
+Jan Peter Balkenende,Male,2002,2010
+Wim Kok,Male,1994,2002
+Ruud Lubbers,Male,1982,1994
+Dries van Agt,Male,1977,1982
+Joop den Uyl,Male,1973,1977
+Barend Biesheuvel,Male,1971,1973
+Piet de Jong,Male,1967,1971
+Jelle Zijlstra,Male,1966,1967
+Jo Cals,Male,1965,1966
+Victor Marijnen,Male,1963,1965
+Jan de Quay,Male,1959,1963
+Louis Beel,Male,1958,1959
+Willem Drees,Male,1948,1958
+Louis Beel,Male,1946,1948
+Wim Schermerhorn,Male,1945,1946
+Pieter Sjoerds Gerbrandy,Male,1940,1945
+Dirk Jan de Geer,Male,1939,1940
+Hendrikus Colijn,Male,1933,1939
+Johannes Tak van Poortvliet,Male,1925,1933
+Charles Ruijs de Beerenbrouck,Male,1922,1925
+Hendrikus Colijn,Male,1920,1922
+Charles Ruijs de Beerenbrouck,Male,1918,1920
+Pieter Cort van der Linden,Male,1913,1918
+Theo Heemskerk,Male,1908,1913
+Abraham Kuyper,Male,1901,1905
+Nicolaas Pierson,Male,1897,1901
+Joan Röell,Male,1894,1897
+Gijsbert van Tienhoven,Male,1891,1894
+Jan Heemskerk,Male,1883,1888
+Theo van Lynden van Sandenburg,Male,1879,1883
+Jan Kappeyne van de Coppello,Male,1877,1879
+Joannes Heemskerk,Male,1874,1877
+Jan de Rooij,Male,1873,1874
+Gerrit de Vries,Male,1872,1873
+Jan Heemskerk,Male,1868,1871
+Pieter Philip van Bosse,Male,1868,1868
+Julius van Zuylen van Nijevelt,Male,1866,1868
+Isaäc Dignus Fransen van de Putte,Male,1866,1866
+Johan Rudolph Thorbecke,Male,1862,1866
+Schelto van Heemstra,Male,1861,1862
+Floris Adriaan van Hall,Male,1858,1860
+Jan Jacob Rochussen,Male,1858,1860
+Justinus van der Brugghen,Male,1856,1858
+Jan Jacob Rochussen,Male,1853,1856
+Floris Adriaan van Hall,Male,1853,1853
+Dirk Donker Curtius,Male,1848,1850
+Jacobus Mattheüs de Kempenaer,Male,1848,1848
+Gerrit Schimmelpenninck,Male,1848,1848
+Jacobus Mattheüs de Kempenaer,Male,1844,1848
+Johan Rudolph Thorbecke,Male,1844,1844
+Gerrit Schimmelpenninck,Male,1841,1844
+Johan van Heemskerck,Male,1841,1841
+Willem de Clercq,Male,1834,1841
+Gijsbert Karel van Hogendorp,Male,1813,1825

@@ -1,39 +1,39 @@
-name, start year, end year
-Deodoro da Fonseca, 1889, 1891
-Floriano Peixoto, 1891, 1894
-Prudente de Morais, 1894, 1898
-Campos Sales, 1898, 1902
-Rodrigues Alves, 1902, 1906
-Afonso Pena, 1906, 1909
-Nilo Peçanha, 1909, 1910
-Hermes da Fonseca, 1910, 1914
-Venceslau Brás, 1914, 1918
-Delfim Moreira, 1918, 1919
-Epitácio Pessoa, 1919, 1922
-Artur Bernardes, 1922, 1926
-Washington Luís, 1926, 1930
-Getúlio Vargas, 1930, 1945
-José Linhares, 1945, 1946
-Eurico Gaspar Dutra, 1946, 1951
-Getúlio Vargas, 1951, 1954
-Café Filho, 1954, 1955
-Carlos Luz, 1955, 1955
-Nereu Ramos, 1955, 1956
-Juscelino Kubitschek, 1956, 1961
-Jânio Quadros, 1961, 1961
-Ranieri Mazzilli, 1961, 1961
-João Goulart, 1961, 1964
-Ranieri Mazzilli, 1964, 1964
-Castelo Branco, 1964, 1967
-Costa e Silva, 1967, 1969
-Emílio Garrastazu Médici, 1969, 1974
-Ernesto Geisel, 1974, 1979
-João Figueiredo, 1979, 1985
-José Sarney, 1985, 1990
-Fernando Collor de Mello, 1990, 1992
-Itamar Franco, 1992, 1995
-Fernando Henrique Cardoso, 1995, 2002
-Luiz Inácio Lula da Silva, 2003, 2010
-Dilma Rousseff, 2011, 2016
-Michel Temer, 2016, 2018
-Jair Bolsonaro, 2019, 2022
+name,gender,start year,end year
+Deodoro da Fonseca,Male,1889,1891
+Floriano Peixoto,Male,1891,1894
+Prudente de Morais,Male,1894,1898
+Campos Sales,Male,1898,1902
+Rodrigues Alves,Male,1902,1906
+Afonso Pena,Male,1906,1909
+Nilo Peçanha,Male,1909,1910
+Hermes da Fonseca,Male,1910,1914
+Venceslau Brás,Male,1914,1918
+Delfim Moreira,Male,1918,1919
+Epitácio Pessoa,Male,1919,1922
+Artur Bernardes,Male,1922,1926
+Washington Luís,Male,1926,1930
+Getúlio Vargas,Male,1930,1945
+José Linhares,Male,1945,1946
+Eurico Gaspar Dutra,Male,1946,1951
+Getúlio Vargas,Male,1951,1954
+Café Filho,Male,1954,1955
+Carlos Luz,Male,1955,1955
+Nereu Ramos,Male,1955,1956
+Juscelino Kubitschek,Male,1956,1961
+Jânio Quadros,Male,1961,1961
+Ranieri Mazzilli,Male,1961,1961
+João Goulart,Male,1961,1964
+Ranieri Mazzilli,Male,1964,1964
+Castelo Branco,Male,1964,1967
+Costa e Silva,Male,1967,1969
+Emílio Garrastazu Médici,Male,1969,1974
+Ernesto Geisel,Male,1974,1979
+João Figueiredo,Male,1979,1985
+José Sarney,Male,1985,1990
+Fernando Collor,Male,1990,1992
+Itamar Franco,Male,1992,1995
+Fernando Henrique Cardoso,Male,1995,2003
+Luiz Inácio Lula da Silva,Male,2003,2011
+Dilma Rousseff,Female,2011,2016
+Michel Temer,Male,2016,2018
+Jair Bolsonaro,Male,2018,2022

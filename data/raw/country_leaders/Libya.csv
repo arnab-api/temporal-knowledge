@@ -1,9 +1,8 @@
-name, start year, end year
-Mahmoud Jibril, 2011, 2011
-Abdurrahim El-Keib, 2011, 2012
-Ali Zeidan, 2012, 2014
-Abdullah al-Thani, 2014, 2014
-Omar al-Hassi, 2014, 2015
-Khalifa al-Ghawil, 2015, 2016
-Fayez al-Sarraj, 2016, 2021
-Abdul Hamid Dbeibeh, 2021, 2022
+name,gender,start year,end year
+Mahmoud Jibril,Male,2011,2011
+Abdurrahim El-Keib,Male,2011,2012
+Ali Zeidan,Male,2012,2014
+Abdullah al-Thani,Male,2014,2015
+Khalifa al-Ghawil,Male,2015,2016
+Fayez al-Sarraj,Male,2016,2021
+Abdul Hamid Dbeibeh,Male,2021,2022

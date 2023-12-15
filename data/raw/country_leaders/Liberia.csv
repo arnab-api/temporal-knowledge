@@ -1,31 +1,31 @@
-name, start year, end year
-Joseph Jenkins Roberts, 1848, 1856
-Stephen Allen Benson, 1856, 1864
-Daniel Bashiel Warner, 1864, 1868
-James Spriggs Payne, 1868, 1870
-Edward James Roye, 1870, 1871
-James Skivring Smith, 1871, 1872
-Joseph Jenkins Roberts, 1872, 1876
-James Spriggs Payne, 1876, 1878
-Anthony W. Gardiner, 1878, 1883
-Alfred Francis Russell, 1883, 1884
-Hilary R. W. Johnson, 1884, 1892
-Joseph James Cheeseman, 1892, 1896
-William D. Coleman, 1896, 1900
-Garretson W. Gibson, 1900, 1904
-Arthur Barclay, 1904, 1912
-Daniel Edward Howard, 1912, 1920
-Charles D. B. King, 1920, 1930
-Edwin Barclay, 1930, 1944
-William Tubman, 1944, 1971
-William R. Tolbert Jr., 1971, 1980
-Samuel Doe, 1980, 1990
-Amos Sawyer, 1990, 1994
-David D. Kpormakpor, 1994, 1995
-Wilma Ciatta Bull, 1995, 1996
-Ruth Perry, 1996, 1997
-Charles Taylor, 1997, 2003
-Moses Blah, 2003, 2003
-Gyude Bryant, 2003, 2006
-Ellen Johnson Sirleaf, 2006, 2018
-George Weah, 2018, 2022
+name,gender,start year,end year
+Joseph Jenkins Roberts,Male,1848,1856
+Stephen Allen Benson,Male,1856,1864
+Daniel Bashiel Warner,Male,1864,1868
+James Spriggs Payne,Male,1868,1870
+Edward James Roye,Male,1870,1871
+James Skivring Smith,Male,1871,1872
+Joseph Jenkins Roberts,Male,1872,1876
+James Spriggs Payne,Male,1876,1878
+Anthony William Gardiner,Male,1878,1883
+Alfred Francis Russell,Male,1883,1884
+Hilary R. W. Johnson,Male,1884,1892
+Joseph James Cheeseman,Male,1892,1896
+William D. Coleman,Male,1896,1900
+Garretson W. Gibson,Male,1900,1904
+Arthur Barclay,Male,1904,1912
+Daniel Edward Howard,Male,1912,1920
+Charles D. B. King,Male,1920,1930
+Edwin Barclay,Male,1930,1944
+William Tubman,Male,1944,1971
+William R. Tolbert Jr.,Male,1971,1980
+Samuel Doe,Male,1980,1990
+Amos Sawyer,Male,1990,1994
+David D. Kpormakpor,Male,1994,1995
+Wilma Sinata,Male,1995,1996
+Ruth Perry,Female,1996,1997
+Charles Taylor,Male,1997,2003
+Moses Blah,Male,2003,2003
+Gyude Bryant,Male,2003,2006
+Ellen Johnson Sirleaf,Female,2006,2018
+George Weah,Male,2018,2022

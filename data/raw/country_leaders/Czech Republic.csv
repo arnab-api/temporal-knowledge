@@ -1,13 +1,13 @@
-name, start year, end year
-Václav Klaus, 1992, 1997
-Josef Tošovský, 1997, 1998
-Miloš Zeman, 1998, 2002
-Vladimír Špidla, 2002, 2004
-Stanislav Gross, 2004, 2005
-Jiří Paroubek, 2005, 2006
-Mirek Topolánek, 2006, 2009
-Jan Fischer, 2009, 2010
-Petr Nečas, 2010, 2013
-Jiří Rusnok, 2013, 2014
-Bohuslav Sobotka, 2014, 2017
-Andrej Babiš, 2017, 2022
+name,gender,start year,end year
+Václav Klaus,Male,1992,1997
+Josef Tošovský,Male,1997,1998
+Miloš Zeman,Male,1998,2002
+Vladimír Špidla,Male,2002,2004
+Stanislav Gross,Male,2004,2005
+Jiří Paroubek,Male,2005,2006
+Mirek Topolánek,Male,2006,2009
+Jan Fischer,Male,2009,2010
+Petr Nečas,Male,2010,2013
+Jiří Rusnok,Male,2013,2014
+Bohuslav Sobotka,Male,2014,2017
+Andrej Babiš,Male,2017,2022

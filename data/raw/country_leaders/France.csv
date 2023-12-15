@@ -1,27 +1,9 @@
-name, start year, end year
-Louis-Napoleon Bonaparte, 1848, 1852
-Napoleon III, 1852, 1870
-Adolphe Thiers, 1871, 1873
-Patrice de MacMahon, 1873, 1879
-Jules Grevy, 1879, 1887
-Marie Francois Sadi Carnot, 1887, 1894
-Jean Casimir-Perier, 1894, 1895
-Felix Faure, 1895, 1899
-Emile Loubet, 1899, 1906
-Armand Fallieres, 1906, 1913
-Raymond Poincare, 1913, 1920
-Paul Deschanel, 1920, 1920
-Alexandre Millerand, 1920, 1924
-Gaston Doumergue, 1924, 1931
-Paul Doumer, 1931, 1932
-Albert Lebrun, 1932, 1940
-Vincent Auriol, 1947, 1954
-Rene Coty, 1954, 1959
-Charles de Gaulle, 1959, 1969
-Georges Pompidou, 1969, 1974
-Valery Giscard d'Estaing, 1974, 1981
-Francois Mitterrand, 1981, 1995
-Jacques Chirac, 1995, 2007
-Nicolas Sarkozy, 2007, 2012
-Francois Hollande, 2012, 2017
-Emmanuel Macron, 2017, 2022
+name,gender,start year,end year
+Charles de Gaulle,Male,1959,1969
+Georges Pompidou,Male,1969,1974
+Valéry Giscard d'Estaing,Male,1974,1981
+François Mitterrand,Male,1981,1995
+Jacques Chirac,Male,1995,2007
+Nicolas Sarkozy,Male,2007,2012
+François Hollande,Male,2012,2017
+Emmanuel Macron,Male,2017,2022

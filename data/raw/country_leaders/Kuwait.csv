@@ -1,11 +1,11 @@
-name, start year, end year
-Mubarak Al-Sabah, 1896, 1915
-Jaber II Al-Sabah, 1915, 1917
-Salem Al-Sabah, 1917, 1921
-Ahmad Al-Jaber Al-Sabah, 1921, 1950
-Abdullah III Al-Salim Al-Sabah, 1950, 1965
-Sabah III Al-Salim Al-Sabah, 1965, 1977
-Jaber III Al-Ahmad Al-Sabah, 1977, 2006
-Saad Al-Abdullah Al-Salim Al-Sabah, 2006, 2006
-Sabah IV Al-Ahmad Al-Jaber Al-Sabah, 2006, 2020
-Nawaf Al-Ahmad Al-Jaber Al-Sabah, 2020, 2022
+name,gender,start year,end year
+Mubarak Al-Sabah,Male,1896,1915
+Jaber II Al-Sabah,Male,1915,1917
+Salem Al-Mubarak Al-Sabah,Male,1917,1921
+Ahmad Al-Jaber Al-Sabah,Male,1921,1950
+Abdullah III Al-Salim Al-Sabah,Male,1950,1965
+Sabah III Al-Salim Al-Sabah,Male,1965,1977
+Jaber III Al-Ahmad Al-Sabah,Male,1977,2006
+Saad Al-Abdullah Al-Salim Al-Sabah,Male,2006,2006
+Sabah IV Al-Ahmad Al-Jaber Al-Sabah,Male,2006,2020
+Nawaf Al-Ahmad Al-Jaber Al-Sabah,Male,2020,2022

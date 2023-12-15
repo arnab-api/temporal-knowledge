@@ -1,13 +1,18 @@
-name, start year, end year
-Mohammed Karim Lamrani, 1971, 1972
-Ahmed Osman, 1972, 1979
-Maati Bouabid, 1979, 1983
-Mohammed Karim Lamrani, 1983, 1986
-Azzedine Laraki, 1986, 1992
-Mohammed Karim Lamrani, 1992, 1994
-Abdellatif Filali, 1994, 1998
-Abderrahmane Youssoufi, 1998, 2002
-Driss Jettou, 2002, 2007
-Abbas El Fassi, 2007, 2011
-Abdelilah Benkirane, 2011, 2017
-Saadeddine Othmani, 2017, 2022
+name,gender,start year,end year
+Mbarek Bekkay,Male,1955,1958
+Abdallah Ibrahim,Male,1958,1960
+Ahmed Balafrej,Male,1960,1961
+Hassan II,Male,1961,1963
+Ahmed Laraki,Male,1963,1967
+Mohamed Benhima,Male,1967,1969
+Abdelilah Benkirane,Male,1969,1971
+Ahmed Osman,Male,1972,1979
+Maati Bouabid,Male,1979,1983
+Mohammed Karim Lamrani,Male,1983,1986
+Azzedine Laraki,Male,1986,1992
+Abdellatif Filali,Male,1992,1994
+Abderrahmane Youssoufi,Male,1998,2002
+Driss Jettou,Male,2002,2007
+Abbas El Fassi,Male,2007,2011
+Abdelilah Benkirane,Male,2011,2017
+Saadeddine Othmani,Male,2017,2022

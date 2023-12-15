@@ -1,7 +1,7 @@
-name, start year, end year
-Julius Nyerere, 1964, 1985
-Ali Hassan Mwinyi, 1985, 1995
-Benjamin Mkapa, 1995, 2005
-Jakaya Kikwete, 2005, 2015
-John Magufuli, 2015, 2021
-Samia Suluhu Hassan, 2021, 2022
+name,gender,start year,end year
+Julius Nyerere,Male,1964,1985
+Ali Hassan Mwinyi,Male,1985,1995
+Benjamin Mkapa,Male,1995,2005
+Jakaya Kikwete,Male,2005,2015
+John Magufuli,Male,2015,2021
+Samia Suluhu,Female,2021,2022

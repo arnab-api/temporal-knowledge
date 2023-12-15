@@ -1,13 +1,36 @@
-name, start year, end year
-Riad Solh, 1946, 1951
-Abdullah El-Yafi, 1951, 1951
-Najib Mikati, 2005, 2005
-Fouad Siniora, 2005, 2009
-Saad Hariri, 2009, 2011
-Najib Mikati, 2011, 2014
-Tammam Salam, 2014, 2016
-Saad Hariri, 2016, 2020
-Hassan Diab, 2020, 2020
-Mustapha Adib, 2020, 2020
-Saad Hariri, 2020, 2021
-Najib Mikati, 2021, 2022
+name,gender,start year,end year
+Riad Al Solh,Male,1946,1951
+Abdullah El-Yafi,Male,1946,1946
+Petro Trad,Male,1951,1952
+Abdullah El-Yafi,Male,1952,1952
+Saeb Salam,Male,1952,1952
+Khaled Chehab,Male,1952,1953
+Abdullah El-Yafi,Male,1953,1954
+Samy El Solh,Male,1954,1955
+Rashid Karami,Male,1955,1956
+Abdullah El-Yafi,Male,1956,1958
+Rashid Karami,Male,1958,1960
+Abdullah El-Yafi,Male,1960,1961
+Rashid Karami,Male,1961,1964
+Hussein El Oweini,Male,1964,1964
+Rashid Karami,Male,1965,1966
+Abdullah El-Yafi,Male,1966,1968
+Rashid Karami,Male,1969,1970
+Saeb Salam,Male,1970,1973
+Amin Hafez,Male,1973,1973
+Takieddin el-Solh,Male,1973,1974
+Rashid Karami,Male,1975,1987
+Selim Hoss,Male,1987,1990
+Omar Karami,Male,1990,1992
+Rafic Hariri,Male,1992,1998
+Selim Hoss,Male,1998,2000
+Rafic Hariri,Male,2000,2004
+Omar Karami,Male,2004,2005
+Najib Mikati,Male,2005,2005
+Fouad Siniora,Male,2005,2009
+Saad Hariri,Male,2009,2011
+Najib Mikati,Male,2011,2014
+Tammam Salam,Male,2014,2016
+Saad Hariri,Male,2016,2020
+Hassan Diab,Male,2020,2021
+Najib Mikati,Male,2021,2022

@@ -1,33 +1,33 @@
-name, start year, end year
-Shigeru Yoshida, 1948, 1954
-Ichiro Hatoyama, 1954, 1956
-Tanzan Ishibashi, 1956, 1957
-Nobusuke Kishi, 1957, 1960
-Hayato Ikeda, 1960, 1964
-Eisaku Sato, 1964, 1972
-Kakuei Tanaka, 1972, 1974
-Takeo Miki, 1974, 1976
-Takeo Fukuda, 1976, 1978
-Masayoshi Ohira, 1978, 1980
-Zenko Suzuki, 1980, 1982
-Yasuhiro Nakasone, 1982, 1987
-Noboru Takeshita, 1987, 1989
-Sosuke Uno, 1989, 1989
-Toshiki Kaifu, 1989, 1991
-Kiichi Miyazawa, 1991, 1993
-Morihiro Hosokawa, 1993, 1994
-Tsutomu Hata, 1994, 1994
-Tomiichi Murayama, 1994, 1996
-Ryutaro Hashimoto, 1996, 1998
-Keizo Obuchi, 1998, 2000
-Yoshiro Mori, 2000, 2001
-Junichiro Koizumi, 2001, 2006
-Shinzo Abe, 2006, 2007
-Yasuo Fukuda, 2007, 2008
-Taro Aso, 2008, 2009
-Yukio Hatoyama, 2009, 2010
-Naoto Kan, 2010, 2011
-Yoshihiko Noda, 2011, 2012
-Shinzo Abe, 2012, 2020
-Yoshihide Suga, 2020, 2021
-Fumio Kishida, 2021, 2022
+name,gender,start year,end year
+Shigeru Yoshida,Male,1948,1954
+Ichiro Hatoyama,Male,1954,1956
+Tanzan Ishibashi,Male,1956,1957
+Nobusuke Kishi,Male,1957,1960
+Hayato Ikeda,Male,1960,1964
+Eisaku Sato,Male,1964,1972
+Kakuei Tanaka,Male,1972,1974
+Takeo Miki,Male,1974,1976
+Takeo Fukuda,Male,1976,1978
+Masayoshi Ohira,Male,1978,1980
+Zenko Suzuki,Male,1980,1982
+Yasuhiro Nakasone,Male,1982,1987
+Noboru Takeshita,Male,1987,1989
+Sosuke Uno,Male,1989,1989
+Toshiki Kaifu,Male,1989,1991
+Kiichi Miyazawa,Male,1991,1993
+Morihiro Hosokawa,Male,1993,1994
+Tsutomu Hata,Male,1994,1994
+Tomiichi Murayama,Male,1994,1996
+Ryutaro Hashimoto,Male,1996,1998
+Keizo Obuchi,Male,1998,2000
+Yoshiro Mori,Male,2000,2001
+Junichiro Koizumi,Male,2001,2006
+Shinzo Abe,Male,2006,2007
+Yasuo Fukuda,Male,2007,2008
+Taro Aso,Male,2008,2009
+Yukio Hatoyama,Male,2009,2010
+Naoto Kan,Male,2010,2011
+Yoshihiko Noda,Male,2011,2012
+Shinzo Abe,Male,2012,2020
+Yoshihide Suga,Male,2020,2021
+Fumio Kishida,Male,2021,2022

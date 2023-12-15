@@ -1,13 +1,13 @@
-name, start year, end year
-Rhee Syng-man, 1948, 1960
-Yun Bo-seon, 1960, 1962
-Park Chung-hee, 1963, 1979
-Choi Kyu-hah, 1979, 1980
-Chun Doo-hwan, 1980, 1988
-Roh Tae-woo, 1988, 1993
-Kim Young-sam, 1993, 1998
-Kim Dae-jung, 1998, 2003
-Roh Moo-hyun, 2003, 2008
-Lee Myung-bak, 2008, 2013
-Park Geun-hye, 2013, 2017
-Moon Jae-in, 2017, 2022
+name,gender,start year,end year
+Syngman Rhee,Male,1948,1960
+Yun Bo-seon,Male,1960,1962
+Park Chung-hee,Male,1962,1979
+Choi Kyu-hah,Male,1979,1980
+Chun Doo-hwan,Male,1980,1988
+Roh Tae-woo,Male,1988,1993
+Kim Young-sam,Male,1993,1998
+Kim Dae-jung,Male,1998,2003
+Roh Moo-hyun,Male,2003,2008
+Lee Myung-bak,Male,2008,2013
+Park Geun-hye,Female,2013,2017
+Moon Jae-in,Male,2017,2022

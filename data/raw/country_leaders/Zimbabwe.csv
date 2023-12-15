@@ -1,4 +1,4 @@
-name, start year, end year
-Canaan Banana, 1980, 1987
-Robert Mugabe, 1987, 2017
-Emmerson Mnangagwa, 2017, 2022
+name,gender,start year,end year
+Canaan Banana,Male,1980,1987
+Robert Mugabe,Male,1987,2017
+Emmerson Mnangagwa,Male,2017,2022

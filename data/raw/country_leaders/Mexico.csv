@@ -1,27 +1,66 @@
-name, start year, end year
-Porfirio Díaz, 1876, 1911
-Francisco I. Madero, 1911, 1913
-Victoriano Huerta, 1913, 1914
-Francisco S. Carvajal, 1914, 1914
-Venustiano Carranza, 1914, 1920
-Adolfo de la Huerta, 1920, 1920
-Álvaro Obregón, 1920, 1924
-Plutarco Elías Calles, 1924, 1928
-Emilio Portes Gil, 1928, 1930
-Pascual Ortiz Rubio, 1930, 1932
-Abelardo L. Rodríguez, 1932, 1934
-Lázaro Cárdenas, 1934, 1940
-Manuel Ávila Camacho, 1940, 1946
-Miguel Alemán Valdés, 1946, 1952
-Adolfo Ruíz Cortines, 1952, 1958
-Adolfo López Mateos, 1958, 1964
-Gustavo Díaz Ordaz, 1964, 1970
-Luis Echeverría, 1970, 1976
-José López Portillo, 1976, 1982
-Miguel de la Madrid, 1982, 1988
-Carlos Salinas de Gortari, 1988, 1994
-Ernesto Zedillo, 1994, 2000
-Vicente Fox, 2000, 2006
-Felipe Calderón, 2006, 2012
-Enrique Peña Nieto, 2012, 2018
-Andrés Manuel López Obrador, 2018, 2022
+name,gender,start year,end year
+Guadalupe Victoria,Male,1824,1829
+Vicente Guerrero,Male,1829,1829
+José María Bocanegra,Male,1829,1829
+Pedro Vélez,Male,1829,1829
+Anastasio Bustamante,Male,1830,1832
+Melchor Múzquiz,Male,1832,1832
+Manuel Gómez Pedraza,Male,1832,1833
+Valentín Gómez Farías,Male,1833,1833
+Antonio López de Santa Anna,Male,1833,1835
+Valentín Gómez Farías,Male,1834,1834
+José Justo Corro,Male,1836,1837
+Nicolás Bravo,Male,1839,1839
+Anastasio Bustamante,Male,1839,1841
+Nicolás Bravo,Male,1842,1843
+Antonio López de Santa Anna,Male,1843,1844
+Valentín Gómez Farías,Male,1844,1844
+José Joaquín de Herrera,Male,1844,1844
+Mariano Paredes y Arrillaga,Male,1846,1846
+José Mariano Salas,Male,1846,1846
+Valentín Gómez Farías,Male,1846,1846
+Pedro María Anaya,Male,1847,1847
+Manuel de la Peña y Peña,Male,1847,1848
+José Joaquín de Herrera,Male,1848,1851
+Mariano Arista,Male,1851,1853
+Juan Bautista Ceballos,Male,1853,1853
+Manuel María Lombardini,Male,1853,1853
+Antonio López de Santa Anna,Male,1853,1855
+Martín Carrera,Male,1855,1855
+Rómulo Díaz de la Vega,Male,1855,1855
+Juan Nepomuceno Álvarez,Male,1855,1855
+Ignacio Comonfort,Male,1855,1857
+Benito Juárez,Male,1859,1872
+Sebastián Lerdo de Tejada,Male,1872,1876
+José María Iglesias,Male,1876,1876
+Juan Nepomuceno Méndez,Male,1876,1876
+Porfirio Díaz,Male,1876,1880
+Manuel González Flores,Male,1880,1884
+Porfirio Díaz,Male,1884,1911
+Francisco León de la Barra,Male,1911,1911
+Francisco I. Madero,Male,1911,1913
+Pedro Lascuráin,Male,1913,1913
+Victoriano Huerta,Male,1913,1914
+Francisco S. Carvajal,Male,1914,1914
+Venustiano Carranza,Male,1914,1920
+Adolfo de la Huerta,Male,1920,1920
+Álvaro Obregón,Male,1920,1924
+Plutarco Elías Calles,Male,1924,1928
+Emilio Portes Gil,Male,1928,1930
+Pascual Ortiz Rubio,Male,1930,1932
+Abelardo L. Rodríguez,Male,1932,1934
+Lázaro Cárdenas,Male,1934,1940
+Manuel Ávila Camacho,Male,1940,1946
+Miguel Alemán Valdés,Male,1946,1952
+Adolfo Ruíz Cortines,Male,1952,1958
+Adolfo López Mateos,Male,1958,1964
+Gustavo Díaz Ordaz,Male,1964,1970
+Luis Echeverría,Male,1970,1976
+José López Portillo,Male,1976,1982
+Miguel de la Madrid,Male,1982,1988
+Carlos Salinas de Gortari,Male,1988,1994
+Ernesto Zedillo,Male,1994,2000
+Vicente Fox,Male,2000,2006
+Felipe Calderón,Male,2006,2012
+Enrique Peña Nieto,Male,2012,2018
+Andrés Manuel López Obrador,Male,2018,2022

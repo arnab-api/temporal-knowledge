@@ -1,4 +1,12 @@
-name, start year, end year
-Jens Stoltenberg, 2005, 2013
-Erna Solberg, 2013, 2020
-Jonas Gahr Støre, 2021, 2022
+name,gender,start year,end year
+Gro Harlem Brundtland,Female,1981,1986
+Gro Harlem Brundtland,Female,1986,1989
+Jan P. Syse,Male,1989,1990
+Gro Harlem Brundtland,Female,1990,1996
+Thorbjørn Jagland,Male,1996,1997
+Kjell Magne Bondevik,Male,1997,2000
+Jens Stoltenberg,Male,2000,2001
+Kjell Magne Bondevik,Male,2001,2005
+Jens Stoltenberg,Male,2005,2013
+Erna Solberg,Female,2013,2021
+Jonas Gahr Støre,Male,2021,2022

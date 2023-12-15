@@ -1,31 +1,34 @@
-name, start year, end year
-Plaek Phibunsongkhram, 1938, 1944
-Khuang Aphaiwong, 1944, 1945
-Seni Pramoj, 1945, 1945
-Khuang Aphaiwong, 1945, 1946
-Thawan Thamrongnawasawat, 1946, 1947
-Khuang Aphaiwong, 1947, 1947
-Plaek Phibunsongkhram, 1948, 1957
-Pote Sarasin, 1957, 1957
-Thanom Kittikachorn, 1958, 1973
-Sanya Dharmasakti, 1973, 1975
-Seni Pramoj, 1975, 1976
-Kukrit Pramoj, 1976, 1976
-Thanin Kraivichien, 1976, 1977
-Kriangsak Chamanan, 1977, 1980
-Prem Tinsulanonda, 1980, 1988
-Chatichai Choonhavan, 1988, 1991
-Anand Panyarachun, 1991, 1992
-Suchinda Kraprayoon, 1992, 1992
-Anand Panyarachun, 1992, 1992
-Chuan Leekpai, 1992, 1995
-Banharn Silpa-archa, 1995, 1996
-Chavalit Yongchaiyudh, 1996, 1997
-Chuan Leekpai, 1997, 2001
-Thaksin Shinawatra, 2001, 2006
-Surayud Chulanont, 2006, 2008
-Samak Sundaravej, 2008, 2008
-Somchai Wongsawat, 2008, 2008
-Abhisit Vejjajiva, 2008, 2011
-Yingluck Shinawatra, 2011, 2014
-Prayut Chan-o-cha, 2014, 2022
+name,gender,start year,end year
+Plaek Phibunsongkhram,Male,1938,1944
+Khuang Aphaiwong,Male,1944,1945
+Seni Pramoj,Male,1945,1945
+Khuang Aphaiwong,Male,1945,1946
+Pridi Banomyong,Male,1946,1946
+Thawan Thamrongnawasawat,Male,1946,1947
+Khuang Aphaiwong,Male,1947,1948
+Plaek Phibunsongkhram,Male,1948,1957
+Pote Sarasin,Male,1957,1957
+Thanom Kittikachorn,Male,1958,1958
+Sarit Thanarat,Male,1959,1963
+Thanom Kittikachorn,Male,1963,1973
+Sanya Dharmasakti,Male,1973,1975
+Seni Pramoj,Male,1975,1976
+Kukrit Pramoj,Male,1976,1976
+Thanin Kraivichien,Male,1976,1977
+Kriangsak Chamanan,Male,1977,1980
+Prem Tinsulanonda,Male,1980,1988
+Chatichai Choonhavan,Male,1988,1991
+Anand Panyarachun,Male,1991,1992
+Suchinda Kraprayoon,Male,1992,1992
+Anand Panyarachun,Male,1992,1992
+Chuan Leekpai,Male,1992,1995
+Banharn Silpa-archa,Male,1995,1996
+Chavalit Yongchaiyudh,Male,1996,1997
+Chuan Leekpai,Male,1997,2001
+Thaksin Shinawatra,Male,2001,2006
+Surayud Chulanont,Male,2006,2008
+Samak Sundaravej,Male,2008,2008
+Somchai Wongsawat,Male,2008,2008
+Abhisit Vejjajiva,Male,2008,2011
+Yingluck Shinawatra,Female,2011,2014
+Prayut Chan-o-cha,Male,2014,2022

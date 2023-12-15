@@ -1,9 +1,9 @@
-name, start year, end year
-Moktar Ould Daddah, 1960, 1978
-Mustafa Ould Salek, 1978, 1979
-Mohamed Khouna Ould Haidalla, 1979, 1984
-Maaouya Ould Sid'Ahmed Taya, 1984, 2005
-Ely Ould Mohamed Vall, 2005, 2007
-Sidi Ould Cheikh Abdallahi, 2007, 2008
-Mohamed Ould Abdel Aziz, 2008, 2019
-Mohamed Ould Ghazouani, 2019, 2022
+name,gender,start year,end year
+Moktar Ould Daddah,Male,1960,1978
+Mustafa Ould Salek,Male,1978,1979
+Mohamed Khouna Ould Haidalla,Male,1979,1984
+Maaouya Ould Sid'Ahmed Taya,Male,1984,2005
+Ely Ould Mohamed Vall,Male,2005,2007
+Sidi Ould Cheikh Abdallahi,Male,2007,2008
+Mohamed Ould Abdel Aziz,Male,2008,2019
+Mohamed Ould Ghazouani,Male,2019,2022

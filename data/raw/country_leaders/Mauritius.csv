@@ -1,9 +1,9 @@
-name, start year, end year
-Seewoosagur Ramgoolam, 1968, 1982
-Anerood Jugnauth, 1982, 1995
-Navin Ramgoolam, 1995, 2000
-Anerood Jugnauth, 2000, 2003
-Paul Berenger, 2003, 2005
-Navin Ramgoolam, 2005, 2014
-Anerood Jugnauth, 2014, 2017
-Pravind Jugnauth, 2017, 2022
+name,gender,start year,end year
+Seewoosagur Ramgoolam,Male,1968,1982
+Anerood Jugnauth,Male,1982,1995
+Navin Ramgoolam,Male,1995,2000
+Anerood Jugnauth,Male,2000,2003
+Paul Berenger,Male,2003,2005
+Navin Ramgoolam,Male,2005,2014
+Anerood Jugnauth,Male,2014,2017
+Pravind Jugnauth,Male,2017,2022

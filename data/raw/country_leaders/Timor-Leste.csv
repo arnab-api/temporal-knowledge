@@ -1,9 +1,8 @@
-name, start year, end year
-"Mari Alkatiri", 2002, 2006
-"José Ramos-Horta", 2006, 2007
-"Estanislau da Silva", 2007, 2007
-"Xanana Gusmão", 2007, 2015
-"Rui Maria de Araújo", 2015, 2017
-"Mari Alkatiri", 2017, 2018
-"Taur Matan Ruak", 2018, 2020
-"Francisco Guterres", 2020, 2022
+name,gender,start year,end year
+Mariano Sabino Lopes,Male,2007,2007
+Estanislau da Silva,Male,2007,2007
+Xanana Gusmão,Male,2007,2015
+Rui Maria de Araújo,Male,2015,2017
+Mari Alkatiri,Male,2017,2018
+Taur Matan Ruak,Male,2018,2020
+Francisco Guterres,Male,2020,2022

@@ -1,19 +1,19 @@
-name, start year, end year
-David Ben-Gurion, 1948, 1954
-Moshe Sharett, 1954, 1955
-David Ben-Gurion, 1955, 1963
-Levi Eshkol, 1963, 1969
-Golda Meir, 1969, 1974
-Yitzhak Rabin, 1974, 1977
-Menachem Begin, 1977, 1983
-Yitzhak Shamir, 1983, 1984
-Shimon Peres, 1984, 1986
-Yitzhak Shamir, 1986, 1992
-Yitzhak Rabin, 1992, 1995
-Shimon Peres, 1995, 1996
-Benjamin Netanyahu, 1996, 1999
-Ehud Barak, 1999, 2001
-Ariel Sharon, 2001, 2006
-Ehud Olmert, 2006, 2009
-Benjamin Netanyahu, 2009, 2020
-Naftali Bennett, 2021, 2022
+name,gender,start year,end year
+David Ben-Gurion,Male,1948,1954
+Moshe Sharett,Male,1954,1955
+David Ben-Gurion,Male,1955,1963
+Levi Eshkol,Male,1963,1969
+Golda Meir,Female,1969,1974
+Yitzhak Rabin,Male,1974,1977
+Menachem Begin,Male,1977,1983
+Yitzhak Shamir,Male,1983,1984
+Shimon Peres,Male,1984,1986
+Yitzhak Shamir,Male,1986,1992
+Yitzhak Rabin,Male,1992,1995
+Shimon Peres,Male,1995,1996
+Benjamin Netanyahu,Male,1996,1999
+Ehud Barak,Male,1999,2001
+Ariel Sharon,Male,2001,2006
+Ehud Olmert,Male,2006,2009
+Benjamin Netanyahu,Male,2009,2020
+Naftali Bennett,Male,2021,2022

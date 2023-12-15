@@ -1,6 +1,6 @@
-name, start year, end year
-Pedro Pires, 1975, 1991
-Carlos Veiga, 1991, 2000
-Gualberto do Rosário, 2000, 2001
-José Maria Neves, 2001, 2016
-Ulisses Correia e Silva, 2016, 2022
+name,gender,start year,end year
+Pedro Pires,Male,1975,1991
+Carlos Veiga,Male,1991,2000
+Gualberto do Rosário,Male,2000,2001
+José Maria Neves,Male,2001,2016
+Ulisses Correia e Silva,Male,2016,2022

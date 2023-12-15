@@ -1,14 +1,14 @@
-name, start year, end year
-Sao Shwe Thaik,1948,1952
-Ba U,1952,1957
-Win Maung,1957,1962
-Ne Win,1962,1981
-San Yu,1981,1988
-Sein Lwin,1988,1988
-Maung Maung,1988,1988
-Saw Maung,1988,1992
-Than Shwe,1992,2011
-Thein Sein,2011,2016
-Htin Kyaw,2016,2018
-Win Myint,2018,2021
-Myint Swe,2021,2022
+name,gender,start year,end year
+Sao Shwe Thaik,Male,1948,1952
+Ba U,Male,1952,1957
+Win Maung,Male,1957,1962
+Ne Win,Male,1962,1981
+San Yu,Male,1981,1988
+Sein Lwin,Male,1988,1988
+Maung Maung,Male,1988,1988
+Saw Maung,Male,1988,1992
+Than Shwe,Male,1992,2011
+Thein Sein,Male,2011,2016
+Htin Kyaw,Male,2016,2018
+Win Myint,Male,2018,2021
+Myint Swe,Male,2021,2022

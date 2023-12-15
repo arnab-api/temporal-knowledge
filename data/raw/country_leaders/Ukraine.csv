@@ -1,21 +1,16 @@
-name, start year, end year
-Vitold Fokin,1990,1992
-Valentyn Symonenko,1992,1992
-Yukhym Zvyahilsky,1992,1993
-Vitaliy Masol,1994,1995
-Yevhen Marchuk,1995,1996
-Pavlo Lazarenko,1996,1997
-Valeriy Pustovoitenko,1997,1999
-Viktor Yushchenko,1999,2001
-Anatoliy Kinakh,2001,2002
-Viktor Yanukovych,2002,2004
-Mykola Azarov,2004,2005
-Yuriy Yekhanurov,2005,2006
-Viktor Yanukovych,2006,2007
-Yulia Tymoshenko,2007,2010
-Mykola Azarov,2010,2014
-Serhiy Arbuzov,2014,2014
-Arseniy Yatsenyuk,2014,2016
-Volodymyr Groysman,2016,2019
-Oleksiy Honcharuk,2019,2020
-Denys Shmyhal,2020,2022
+name,gender,start year,end year
+Vitold Fokin,Male,1990,1992
+Valentyn Symonenko,Male,1992,1992
+Viktor Yushchenko,Male,1999,2001
+Anatoliy Kinakh,Male,2001,2002
+Viktor Yanukovych,Male,2002,2005
+Yulia Tymoshenko,Female,2005,2005
+Yuriy Yekhanurov,Male,2005,2006
+Viktor Yanukovych,Male,2006,2007
+Yulia Tymoshenko,Female,2007,2010
+Mykola Azarov,Male,2010,2014
+Serhiy Arbuzov,Male,2014,2014
+Arseniy Yatsenyuk,Male,2014,2016
+Volodymyr Groysman,Male,2016,2019
+Oleksiy Honcharuk,Male,2019,2020
+Denys Shmyhal,Male,2020,2022
