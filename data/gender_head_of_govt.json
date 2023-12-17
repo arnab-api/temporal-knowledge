@@ -11,7 +11,7 @@
     "properties": {
         "relation_type": "factual",
         "domain_type": "country",
-        "range_type": "person",
+        "range_type": "gender",
         "placeholders": {
             "<var>": "year",
             "<role>": [
