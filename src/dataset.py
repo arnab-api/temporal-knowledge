@@ -4,6 +4,7 @@ import logging
 import os
 import re
 from dataclasses import dataclass, replace
+from random import shuffle
 from typing import Literal, Optional
 
 import src.utils.dataset_utils as dset_utils
@@ -190,6 +191,24 @@ class TemporalRelation(DataClassJsonMixin, Dataset):
             max = np.max(list(counts.values()))
             return f"range = |{len(self._range)}| count(obj)_min = {min}, count(obj)_max = {max}"
 
+    def set_attribute(self, **kwargs):
+        params = [
+            "relation_name",
+            "prompt_template",
+            "samples",
+            "properties",
+            "prompt_template_zs",
+        ]
+        for k in kwargs:
+            if k not in params:
+                raise ValueError(f"Unknown parameter: {k} not in {params}")
+
+        for k in params:
+            if k not in kwargs:
+                kwargs[k] = getattr(self, k)
+
+        return TemporalRelation(**kwargs)
+
 
 def load_relation(
     relation_file: str,
@@ -230,11 +249,13 @@ def load_relation(
         _range.append(sample["object"])
 
     _range = list(set(_range))
+    shuffle(samples)
+
     if batch_size != -1:
         if len(_range) < batch_size:
             samples = balance_samples(samples, num_per_obj=batch_size // len(_range))
         else:
-            samples = balance_samples(samples)
+            samples = balance_samples(samples)[:batch_size]
 
     return TemporalRelation(
         relation_name=relation_data["name"],

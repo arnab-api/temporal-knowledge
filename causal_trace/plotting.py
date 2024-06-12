@@ -1,9 +1,9 @@
 import os
 
-import matplotlib.pyplot as plt
-
 from causal_trace.tracing import calculate_hidden_flow
 from causal_trace.utils import guess_subject
+
+import matplotlib.pyplot as plt
 
 
 def plot_trace_heatmap(result, savepdf=None, title=None, xlabel=None, modelname=None):
@@ -57,7 +57,7 @@ def plot_trace_heatmap(result, savepdf=None, title=None, xlabel=None, modelname=
             # The following should be cb.ax.set_xlabel, but this is broken in matplotlib 3.5.1.
             cb.ax.set_title(
                 f"p({str(answer).strip()})",
-                y=-len(result["input_tokens"]) * 0.011,
+                y=-0.15,
                 fontsize=10,
             )
         if savepdf:

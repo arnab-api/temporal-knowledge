@@ -1,4 +1,5 @@
 import logging
+import os
 import re
 from typing import Literal, Optional
 
@@ -7,9 +8,21 @@ from src.utils.typing import Layer, Sequence
 import baukit
 import torch
 import transformers
+import yaml
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
 logger = logging.getLogger(__name__)
+
+try:
+    PATH = os.path.dirname(os.path.abspath(__file__))
+    with open(os.path.join(PATH, "../env.yml"), "r") as f:
+        config = yaml.safe_load(f)
+        MODEL_ROOT = config["MODEL_ROOT"]
+except FileNotFoundError:
+    logger.error(
+        'env.yml not found! Setting MODEL_ROOT ="". Models will now be downloaded to conda env cache, if not already there'
+    )
+    MODEL_ROOT = ""
 
 
 class ModelandTokenizer:
@@ -25,8 +38,8 @@ class ModelandTokenizer:
         ), "Either model or model_name must be provided"
         if model is not None:
             assert tokenizer is not None, "Tokenizer must be provided with the model"
-            self.model_name = model.config._name_or_path
         else:
+            model_path = os.path.join(MODEL_ROOT, model_path)
             model, tokenizer = (
                 AutoModelForCausalLM.from_pretrained(
                     model_path,
@@ -43,8 +56,8 @@ class ModelandTokenizer:
             logger.info(
                 f"loaded model <{model_path}> | size: {get_model_size(model) :.3f} MB"
             )
-            self.model_name = model_path
 
+        self.model_name = model.config._name_or_path.lower().split("/")[-1]
         self.model = model
         self.tokenizer = tokenizer
         self.model.eval()

@@ -1,15 +1,15 @@
 from collections import defaultdict
 
-import baukit as nethook
-import numpy
-import torch
-
 from causal_trace.utils import (
     decode_tokens,
     find_token_range,
     make_inputs,
     predict_from_input,
 )
+
+import baukit as nethook
+import numpy
+import torch
 
 
 def trace_with_patch(

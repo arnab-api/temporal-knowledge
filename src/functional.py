@@ -3,7 +3,7 @@ import logging
 from typing import Any, Callable, Literal, Optional, Union
 
 import src.utils.tokenizer_utils as tokenizer_utils
-from src.dataset import TemporalRelation
+from src.dataset import TemporalRelation  # , set_attribute
 from src.models import ModelandTokenizer
 
 import baukit
@@ -171,9 +171,11 @@ def predict_next_token(
                             rank,
                             PredictedToken(
                                 token=mt.tokenizer.decode(tok_id),
-                                token_id=tok_id.item()
-                                if isinstance(tok_id, torch.Tensor)
-                                else tok_id,
+                                token_id=(
+                                    tok_id.item()
+                                    if isinstance(tok_id, torch.Tensor)
+                                    else tok_id
+                                ),
                                 prob=prob_tok.item(),
                             ),
                         )
@@ -265,8 +267,7 @@ def filter_samples_by_model_knowledge(
         f'filtered relation "{relation.relation_name}" to {len(filtered_samples)} samples (with {relation.properties["num_icl"]}-shots)'
     )
 
-    relation.samples = filtered_samples
-    return relation
+    return relation.set_attribute(samples=filtered_samples)
 
 
 def untuple(x):
@@ -318,9 +319,11 @@ def get_h(
         mt.model(**tokenized)
 
     h = {
-        layer: untuple(traces[layer].output)[:, subject_end - 1].squeeze()
-        if mode == "output"
-        else untuple(traces[layer].input)[:, subject_end - 1].squeeze()
+        layer: (
+            untuple(traces[layer].output)[:, subject_end - 1].squeeze()
+            if mode == "output"
+            else untuple(traces[layer].input)[:, subject_end - 1].squeeze()
+        )
         for layer in layers
     }
     return h
